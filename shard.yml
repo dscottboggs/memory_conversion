@@ -1,0 +1,9 @@
+name: memory_conversion
+version: 0.1.0
+
+authors:
+  - Scott Boggs <scott@tams.tech>
+
+crystal: 0.30.1
+
+license: MIT
