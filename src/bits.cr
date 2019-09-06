@@ -1,6 +1,8 @@
 require "./memory_conversion"
+
 struct MemoryConversion::Bits
   @value : Float64
+
   def initialize(value)
     @value = value.to_f64
   end
@@ -34,14 +36,14 @@ struct MemoryConversion::Bits
       to_storage_{{prefix.id}}bits / 8
     end
     # Produce a string representing this bit value as {{prefix.id}}bits.
-    def to_{{prefix.id}}_s
+    def to_{{prefix.id}}bit_s
       "#{to_{{prefix.id}}bits}{{prefix.capitalize.id}}bits"
     end
-    # Produce a string representing this bit value as {{prefix[0..1].id}}b.
-    def to_{{prefix[0..1].downcase.id}}b_s
-      "#{to_{{prefix.id}}bits}{{prefix[0..1].id}}b"
+    # Produce a string representing this bit value as {{prefix[0..0].id}}b.
+    def to_{{prefix[0..0].downcase.id}}b_s
+      "#{to_{{prefix.id}}bits}{{prefix[0..0].id}}b"
     end
-    {% end %}
+  {% end %}
 
   def to_s(scale : Symbol)
     {% begin %}

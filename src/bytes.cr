@@ -32,12 +32,12 @@ struct MemoryConversion::Bytes
       to_storage_{{prefix.id}}bytes * 8
     end
     # Produce a string representing this byte value as {{prefix.id}}bytes.
-    def to_{{prefix.id}}_s
+    def to_{{prefix.id}}byte_s
       "#{to_{{prefix.id}}bytes} {{prefix.capitalize.id}}bytes"
     end
-    # Produce a string representing this byte value as {{prefix[0..1].id}}B.
-    def to_{{prefix[0..1].downcase.id}}b_s
-      "#{to_{{prefix.id}}bytes}{{prefix[0..1].id}}B"
+    # Produce a string representing this byte value as {{prefix[0..0].id}}B.
+    def to_{{prefix[0..0].downcase.id}}b_s
+      "#{to_{{prefix.id}}bytes}{{prefix[0..0].id}}B"
     end
   {% end %}
 

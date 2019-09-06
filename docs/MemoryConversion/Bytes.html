@@ -96,7 +96,7 @@
   <h2>Defined in:</h2>
   
     
-      <a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bytes.cr#L3" target="_blank">
+      <a href="https://github.com/dscottboggs/memory_conversion/blob/0994abe5de86c5b0bac3c18a22e9b8a92422517e/src/bytes.cr#L3" target="_blank">
         bytes.cr
       </a>
     
@@ -125,13 +125,6 @@
   <ul class="list-summary">
     
       <li class="entry-summary">
-        <a href="#to__s-instance-method" class="signature"><strong>#to__s</strong></a>
-        
-          <div class="summary"><p>Produce a string representing this byte value as bytes.</p></div>
-        
-      </li>
-    
-      <li class="entry-summary">
         <a href="#to_b_s-instance-method" class="signature"><strong>#to_b_s</strong></a>
         
           <div class="summary"><p>Produce a string representing this byte value as B.</p></div>
@@ -146,6 +139,13 @@
       </li>
     
       <li class="entry-summary">
+        <a href="#to_byte_s-instance-method" class="signature"><strong>#to_byte_s</strong></a>
+        
+          <div class="summary"><p>Produce a string representing this byte value as bytes.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
         <a href="#to_bytes:Float64-instance-method" class="signature"><strong>#to_bytes</strong> : Float64</a>
         
           <div class="summary"><p>Convert this number of bytes to the equivalent number of bytes</p></div>
@@ -153,9 +153,9 @@
       </li>
     
       <li class="entry-summary">
-        <a href="#to_exa_s-instance-method" class="signature"><strong>#to_exa_s</strong></a>
+        <a href="#to_eb_s-instance-method" class="signature"><strong>#to_eb_s</strong></a>
         
-          <div class="summary"><p>Produce a string representing this byte value as exabytes.</p></div>
+          <div class="summary"><p>Produce a string representing this byte value as eB.</p></div>
         
       </li>
     
@@ -167,6 +167,13 @@
       </li>
     
       <li class="entry-summary">
+        <a href="#to_exabyte_s-instance-method" class="signature"><strong>#to_exabyte_s</strong></a>
+        
+          <div class="summary"><p>Produce a string representing this byte value as exabytes.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
         <a href="#to_exabytes:Float64-instance-method" class="signature"><strong>#to_exabytes</strong> : Float64</a>
         
           <div class="summary"><p>Convert this number of bytes to the equivalent number of exabytes</p></div>
@@ -174,23 +181,9 @@
       </li>
     
       <li class="entry-summary">
-        <a href="#to_exb_s-instance-method" class="signature"><strong>#to_exb_s</strong></a>
+        <a href="#to_gb_s-instance-method" class="signature"><strong>#to_gb_s</strong></a>
         
-          <div class="summary"><p>Produce a string representing this byte value as exB.</p></div>
-        
-      </li>
-    
-      <li class="entry-summary">
-        <a href="#to_gib_s-instance-method" class="signature"><strong>#to_gib_s</strong></a>
-        
-          <div class="summary"><p>Produce a string representing this byte value as giB.</p></div>
-        
-      </li>
-    
-      <li class="entry-summary">
-        <a href="#to_giga_s-instance-method" class="signature"><strong>#to_giga_s</strong></a>
-        
-          <div class="summary"><p>Produce a string representing this byte value as gigabytes.</p></div>
+          <div class="summary"><p>Produce a string representing this byte value as gB.</p></div>
         
       </li>
     
@@ -202,6 +195,13 @@
       </li>
     
       <li class="entry-summary">
+        <a href="#to_gigabyte_s-instance-method" class="signature"><strong>#to_gigabyte_s</strong></a>
+        
+          <div class="summary"><p>Produce a string representing this byte value as gigabytes.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
         <a href="#to_gigabytes:Float64-instance-method" class="signature"><strong>#to_gigabytes</strong> : Float64</a>
         
           <div class="summary"><p>Convert this number of bytes to the equivalent number of gigabytes</p></div>
@@ -209,16 +209,9 @@
       </li>
     
       <li class="entry-summary">
-        <a href="#to_kib_s-instance-method" class="signature"><strong>#to_kib_s</strong></a>
+        <a href="#to_kb_s-instance-method" class="signature"><strong>#to_kb_s</strong></a>
         
-          <div class="summary"><p>Produce a string representing this byte value as kiB.</p></div>
-        
-      </li>
-    
-      <li class="entry-summary">
-        <a href="#to_kilo_s-instance-method" class="signature"><strong>#to_kilo_s</strong></a>
-        
-          <div class="summary"><p>Produce a string representing this byte value as kilobytes.</p></div>
+          <div class="summary"><p>Produce a string representing this byte value as kB.</p></div>
         
       </li>
     
@@ -230,6 +223,13 @@
       </li>
     
       <li class="entry-summary">
+        <a href="#to_kilobyte_s-instance-method" class="signature"><strong>#to_kilobyte_s</strong></a>
+        
+          <div class="summary"><p>Produce a string representing this byte value as kilobytes.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
         <a href="#to_kilobytes:Float64-instance-method" class="signature"><strong>#to_kilobytes</strong> : Float64</a>
         
           <div class="summary"><p>Convert this number of bytes to the equivalent number of kilobytes</p></div>
@@ -237,16 +237,9 @@
       </li>
     
       <li class="entry-summary">
-        <a href="#to_meb_s-instance-method" class="signature"><strong>#to_meb_s</strong></a>
+        <a href="#to_mb_s-instance-method" class="signature"><strong>#to_mb_s</strong></a>
         
-          <div class="summary"><p>Produce a string representing this byte value as meB.</p></div>
-        
-      </li>
-    
-      <li class="entry-summary">
-        <a href="#to_mega_s-instance-method" class="signature"><strong>#to_mega_s</strong></a>
-        
-          <div class="summary"><p>Produce a string representing this byte value as megabytes.</p></div>
+          <div class="summary"><p>Produce a string representing this byte value as mB.</p></div>
         
       </li>
     
@@ -258,6 +251,13 @@
       </li>
     
       <li class="entry-summary">
+        <a href="#to_megabyte_s-instance-method" class="signature"><strong>#to_megabyte_s</strong></a>
+        
+          <div class="summary"><p>Produce a string representing this byte value as megabytes.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
         <a href="#to_megabytes:Float64-instance-method" class="signature"><strong>#to_megabytes</strong> : Float64</a>
         
           <div class="summary"><p>Convert this number of bytes to the equivalent number of megabytes</p></div>
@@ -265,16 +265,9 @@
       </li>
     
       <li class="entry-summary">
-        <a href="#to_peb_s-instance-method" class="signature"><strong>#to_peb_s</strong></a>
+        <a href="#to_pb_s-instance-method" class="signature"><strong>#to_pb_s</strong></a>
         
-          <div class="summary"><p>Produce a string representing this byte value as peB.</p></div>
-        
-      </li>
-    
-      <li class="entry-summary">
-        <a href="#to_peta_s-instance-method" class="signature"><strong>#to_peta_s</strong></a>
-        
-          <div class="summary"><p>Produce a string representing this byte value as petabytes.</p></div>
+          <div class="summary"><p>Produce a string representing this byte value as pB.</p></div>
         
       </li>
     
@@ -282,6 +275,13 @@
         <a href="#to_petabits:Float64-instance-method" class="signature"><strong>#to_petabits</strong> : Float64</a>
         
           <div class="summary"><p>Convert this number of bytes to the equivalent number of petabits</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_petabyte_s-instance-method" class="signature"><strong>#to_petabyte_s</strong></a>
+        
+          <div class="summary"><p>Produce a string representing this byte value as petabytes.</p></div>
         
       </li>
     
@@ -424,16 +424,9 @@
       </li>
     
       <li class="entry-summary">
-        <a href="#to_teb_s-instance-method" class="signature"><strong>#to_teb_s</strong></a>
+        <a href="#to_tb_s-instance-method" class="signature"><strong>#to_tb_s</strong></a>
         
-          <div class="summary"><p>Produce a string representing this byte value as teB.</p></div>
-        
-      </li>
-    
-      <li class="entry-summary">
-        <a href="#to_tera_s-instance-method" class="signature"><strong>#to_tera_s</strong></a>
-        
-          <div class="summary"><p>Produce a string representing this byte value as terabytes.</p></div>
+          <div class="summary"><p>Produce a string representing this byte value as tB.</p></div>
         
       </li>
     
@@ -445,6 +438,13 @@
       </li>
     
       <li class="entry-summary">
+        <a href="#to_terabyte_s-instance-method" class="signature"><strong>#to_terabyte_s</strong></a>
+        
+          <div class="summary"><p>Produce a string representing this byte value as terabytes.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
         <a href="#to_terabytes:Float64-instance-method" class="signature"><strong>#to_terabytes</strong> : Float64</a>
         
           <div class="summary"><p>Convert this number of bytes to the equivalent number of terabytes</p></div>
@@ -452,16 +452,9 @@
       </li>
     
       <li class="entry-summary">
-        <a href="#to_yob_s-instance-method" class="signature"><strong>#to_yob_s</strong></a>
+        <a href="#to_yb_s-instance-method" class="signature"><strong>#to_yb_s</strong></a>
         
-          <div class="summary"><p>Produce a string representing this byte value as yoB.</p></div>
-        
-      </li>
-    
-      <li class="entry-summary">
-        <a href="#to_yotta_s-instance-method" class="signature"><strong>#to_yotta_s</strong></a>
-        
-          <div class="summary"><p>Produce a string representing this byte value as yottabytes.</p></div>
+          <div class="summary"><p>Produce a string representing this byte value as yB.</p></div>
         
       </li>
     
@@ -473,6 +466,13 @@
       </li>
     
       <li class="entry-summary">
+        <a href="#to_yottabyte_s-instance-method" class="signature"><strong>#to_yottabyte_s</strong></a>
+        
+          <div class="summary"><p>Produce a string representing this byte value as yottabytes.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
         <a href="#to_yottabytes:Float64-instance-method" class="signature"><strong>#to_yottabytes</strong> : Float64</a>
         
           <div class="summary"><p>Convert this number of bytes to the equivalent number of yottabytes</p></div>
@@ -480,16 +480,9 @@
       </li>
     
       <li class="entry-summary">
-        <a href="#to_zeb_s-instance-method" class="signature"><strong>#to_zeb_s</strong></a>
+        <a href="#to_zb_s-instance-method" class="signature"><strong>#to_zb_s</strong></a>
         
-          <div class="summary"><p>Produce a string representing this byte value as zeB.</p></div>
-        
-      </li>
-    
-      <li class="entry-summary">
-        <a href="#to_zetta_s-instance-method" class="signature"><strong>#to_zetta_s</strong></a>
-        
-          <div class="summary"><p>Produce a string representing this byte value as zettabytes.</p></div>
+          <div class="summary"><p>Produce a string representing this byte value as zB.</p></div>
         
       </li>
     
@@ -497,6 +490,13 @@
         <a href="#to_zettabits:Float64-instance-method" class="signature"><strong>#to_zettabits</strong> : Float64</a>
         
           <div class="summary"><p>Convert this number of bytes to the equivalent number of zettabits</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_zettabyte_s-instance-method" class="signature"><strong>#to_zettabyte_s</strong></a>
+        
+          <div class="summary"><p>Produce a string representing this byte value as zettabytes.</p></div>
         
       </li>
     
@@ -571,7 +571,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bytes.cr#L6" target="_blank">View source</a>]
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/0994abe5de86c5b0bac3c18a22e9b8a92422517e/src/bytes.cr#L6" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -582,24 +582,6 @@
 
 
   <h2>Instance Method Detail</h2>
-  
-    <div class="entry-detail" id="to__s-instance-method">
-      <div class="signature">
-        
-        def <strong>to__s</strong>
-
-        <a class="method-permalink" href="#to__s-instance-method">#</a>
-      </div>
-      
-        <div class="doc"><p>Produce a string representing this byte value as bytes.</p></div>
-      
-      <br/>
-      <div>
-        
-          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bytes.cr#L12" target="_blank">View source</a>]
-        
-      </div>
-    </div>
   
     <div class="entry-detail" id="to_b_s-instance-method">
       <div class="signature">
@@ -614,7 +596,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bytes.cr#L12" target="_blank">View source</a>]
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/0994abe5de86c5b0bac3c18a22e9b8a92422517e/src/bytes.cr#L12" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -633,7 +615,25 @@ bits</p></div>
       <br/>
       <div>
         
-          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bytes.cr#L12" target="_blank">View source</a>]
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/0994abe5de86c5b0bac3c18a22e9b8a92422517e/src/bytes.cr#L12" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_byte_s-instance-method">
+      <div class="signature">
+        
+        def <strong>to_byte_s</strong>
+
+        <a class="method-permalink" href="#to_byte_s-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Produce a string representing this byte value as bytes.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/0994abe5de86c5b0bac3c18a22e9b8a92422517e/src/bytes.cr#L12" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -652,25 +652,25 @@ bytes</p></div>
       <br/>
       <div>
         
-          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bytes.cr#L12" target="_blank">View source</a>]
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/0994abe5de86c5b0bac3c18a22e9b8a92422517e/src/bytes.cr#L12" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="to_exa_s-instance-method">
+    <div class="entry-detail" id="to_eb_s-instance-method">
       <div class="signature">
         
-        def <strong>to_exa_s</strong>
+        def <strong>to_eb_s</strong>
 
-        <a class="method-permalink" href="#to_exa_s-instance-method">#</a>
+        <a class="method-permalink" href="#to_eb_s-instance-method">#</a>
       </div>
       
-        <div class="doc"><p>Produce a string representing this byte value as exabytes.</p></div>
+        <div class="doc"><p>Produce a string representing this byte value as eB.</p></div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bytes.cr#L12" target="_blank">View source</a>]
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/0994abe5de86c5b0bac3c18a22e9b8a92422517e/src/bytes.cr#L12" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -689,7 +689,25 @@ exabits</p></div>
       <br/>
       <div>
         
-          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bytes.cr#L12" target="_blank">View source</a>]
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/0994abe5de86c5b0bac3c18a22e9b8a92422517e/src/bytes.cr#L12" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_exabyte_s-instance-method">
+      <div class="signature">
+        
+        def <strong>to_exabyte_s</strong>
+
+        <a class="method-permalink" href="#to_exabyte_s-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Produce a string representing this byte value as exabytes.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/0994abe5de86c5b0bac3c18a22e9b8a92422517e/src/bytes.cr#L12" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -708,61 +726,25 @@ exabytes</p></div>
       <br/>
       <div>
         
-          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bytes.cr#L12" target="_blank">View source</a>]
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/0994abe5de86c5b0bac3c18a22e9b8a92422517e/src/bytes.cr#L12" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="to_exb_s-instance-method">
+    <div class="entry-detail" id="to_gb_s-instance-method">
       <div class="signature">
         
-        def <strong>to_exb_s</strong>
+        def <strong>to_gb_s</strong>
 
-        <a class="method-permalink" href="#to_exb_s-instance-method">#</a>
+        <a class="method-permalink" href="#to_gb_s-instance-method">#</a>
       </div>
       
-        <div class="doc"><p>Produce a string representing this byte value as exB.</p></div>
+        <div class="doc"><p>Produce a string representing this byte value as gB.</p></div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bytes.cr#L12" target="_blank">View source</a>]
-        
-      </div>
-    </div>
-  
-    <div class="entry-detail" id="to_gib_s-instance-method">
-      <div class="signature">
-        
-        def <strong>to_gib_s</strong>
-
-        <a class="method-permalink" href="#to_gib_s-instance-method">#</a>
-      </div>
-      
-        <div class="doc"><p>Produce a string representing this byte value as giB.</p></div>
-      
-      <br/>
-      <div>
-        
-          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bytes.cr#L12" target="_blank">View source</a>]
-        
-      </div>
-    </div>
-  
-    <div class="entry-detail" id="to_giga_s-instance-method">
-      <div class="signature">
-        
-        def <strong>to_giga_s</strong>
-
-        <a class="method-permalink" href="#to_giga_s-instance-method">#</a>
-      </div>
-      
-        <div class="doc"><p>Produce a string representing this byte value as gigabytes.</p></div>
-      
-      <br/>
-      <div>
-        
-          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bytes.cr#L12" target="_blank">View source</a>]
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/0994abe5de86c5b0bac3c18a22e9b8a92422517e/src/bytes.cr#L12" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -781,7 +763,25 @@ gigabits</p></div>
       <br/>
       <div>
         
-          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bytes.cr#L12" target="_blank">View source</a>]
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/0994abe5de86c5b0bac3c18a22e9b8a92422517e/src/bytes.cr#L12" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_gigabyte_s-instance-method">
+      <div class="signature">
+        
+        def <strong>to_gigabyte_s</strong>
+
+        <a class="method-permalink" href="#to_gigabyte_s-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Produce a string representing this byte value as gigabytes.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/0994abe5de86c5b0bac3c18a22e9b8a92422517e/src/bytes.cr#L12" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -800,43 +800,25 @@ gigabytes</p></div>
       <br/>
       <div>
         
-          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bytes.cr#L12" target="_blank">View source</a>]
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/0994abe5de86c5b0bac3c18a22e9b8a92422517e/src/bytes.cr#L12" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="to_kib_s-instance-method">
+    <div class="entry-detail" id="to_kb_s-instance-method">
       <div class="signature">
         
-        def <strong>to_kib_s</strong>
+        def <strong>to_kb_s</strong>
 
-        <a class="method-permalink" href="#to_kib_s-instance-method">#</a>
+        <a class="method-permalink" href="#to_kb_s-instance-method">#</a>
       </div>
       
-        <div class="doc"><p>Produce a string representing this byte value as kiB.</p></div>
+        <div class="doc"><p>Produce a string representing this byte value as kB.</p></div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bytes.cr#L12" target="_blank">View source</a>]
-        
-      </div>
-    </div>
-  
-    <div class="entry-detail" id="to_kilo_s-instance-method">
-      <div class="signature">
-        
-        def <strong>to_kilo_s</strong>
-
-        <a class="method-permalink" href="#to_kilo_s-instance-method">#</a>
-      </div>
-      
-        <div class="doc"><p>Produce a string representing this byte value as kilobytes.</p></div>
-      
-      <br/>
-      <div>
-        
-          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bytes.cr#L12" target="_blank">View source</a>]
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/0994abe5de86c5b0bac3c18a22e9b8a92422517e/src/bytes.cr#L12" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -855,7 +837,25 @@ kilobits</p></div>
       <br/>
       <div>
         
-          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bytes.cr#L12" target="_blank">View source</a>]
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/0994abe5de86c5b0bac3c18a22e9b8a92422517e/src/bytes.cr#L12" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_kilobyte_s-instance-method">
+      <div class="signature">
+        
+        def <strong>to_kilobyte_s</strong>
+
+        <a class="method-permalink" href="#to_kilobyte_s-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Produce a string representing this byte value as kilobytes.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/0994abe5de86c5b0bac3c18a22e9b8a92422517e/src/bytes.cr#L12" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -874,43 +874,25 @@ kilobytes</p></div>
       <br/>
       <div>
         
-          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bytes.cr#L12" target="_blank">View source</a>]
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/0994abe5de86c5b0bac3c18a22e9b8a92422517e/src/bytes.cr#L12" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="to_meb_s-instance-method">
+    <div class="entry-detail" id="to_mb_s-instance-method">
       <div class="signature">
         
-        def <strong>to_meb_s</strong>
+        def <strong>to_mb_s</strong>
 
-        <a class="method-permalink" href="#to_meb_s-instance-method">#</a>
+        <a class="method-permalink" href="#to_mb_s-instance-method">#</a>
       </div>
       
-        <div class="doc"><p>Produce a string representing this byte value as meB.</p></div>
+        <div class="doc"><p>Produce a string representing this byte value as mB.</p></div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bytes.cr#L12" target="_blank">View source</a>]
-        
-      </div>
-    </div>
-  
-    <div class="entry-detail" id="to_mega_s-instance-method">
-      <div class="signature">
-        
-        def <strong>to_mega_s</strong>
-
-        <a class="method-permalink" href="#to_mega_s-instance-method">#</a>
-      </div>
-      
-        <div class="doc"><p>Produce a string representing this byte value as megabytes.</p></div>
-      
-      <br/>
-      <div>
-        
-          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bytes.cr#L12" target="_blank">View source</a>]
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/0994abe5de86c5b0bac3c18a22e9b8a92422517e/src/bytes.cr#L12" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -929,7 +911,25 @@ megabits</p></div>
       <br/>
       <div>
         
-          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bytes.cr#L12" target="_blank">View source</a>]
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/0994abe5de86c5b0bac3c18a22e9b8a92422517e/src/bytes.cr#L12" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_megabyte_s-instance-method">
+      <div class="signature">
+        
+        def <strong>to_megabyte_s</strong>
+
+        <a class="method-permalink" href="#to_megabyte_s-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Produce a string representing this byte value as megabytes.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/0994abe5de86c5b0bac3c18a22e9b8a92422517e/src/bytes.cr#L12" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -948,43 +948,25 @@ megabytes</p></div>
       <br/>
       <div>
         
-          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bytes.cr#L12" target="_blank">View source</a>]
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/0994abe5de86c5b0bac3c18a22e9b8a92422517e/src/bytes.cr#L12" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="to_peb_s-instance-method">
+    <div class="entry-detail" id="to_pb_s-instance-method">
       <div class="signature">
         
-        def <strong>to_peb_s</strong>
+        def <strong>to_pb_s</strong>
 
-        <a class="method-permalink" href="#to_peb_s-instance-method">#</a>
+        <a class="method-permalink" href="#to_pb_s-instance-method">#</a>
       </div>
       
-        <div class="doc"><p>Produce a string representing this byte value as peB.</p></div>
+        <div class="doc"><p>Produce a string representing this byte value as pB.</p></div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bytes.cr#L12" target="_blank">View source</a>]
-        
-      </div>
-    </div>
-  
-    <div class="entry-detail" id="to_peta_s-instance-method">
-      <div class="signature">
-        
-        def <strong>to_peta_s</strong>
-
-        <a class="method-permalink" href="#to_peta_s-instance-method">#</a>
-      </div>
-      
-        <div class="doc"><p>Produce a string representing this byte value as petabytes.</p></div>
-      
-      <br/>
-      <div>
-        
-          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bytes.cr#L12" target="_blank">View source</a>]
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/0994abe5de86c5b0bac3c18a22e9b8a92422517e/src/bytes.cr#L12" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1003,7 +985,25 @@ petabits</p></div>
       <br/>
       <div>
         
-          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bytes.cr#L12" target="_blank">View source</a>]
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/0994abe5de86c5b0bac3c18a22e9b8a92422517e/src/bytes.cr#L12" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_petabyte_s-instance-method">
+      <div class="signature">
+        
+        def <strong>to_petabyte_s</strong>
+
+        <a class="method-permalink" href="#to_petabyte_s-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Produce a string representing this byte value as petabytes.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/0994abe5de86c5b0bac3c18a22e9b8a92422517e/src/bytes.cr#L12" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1022,7 +1022,7 @@ petabytes</p></div>
       <br/>
       <div>
         
-          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bytes.cr#L12" target="_blank">View source</a>]
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/0994abe5de86c5b0bac3c18a22e9b8a92422517e/src/bytes.cr#L12" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1038,7 +1038,7 @@ petabytes</p></div>
       <br/>
       <div>
         
-          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bytes.cr#L44" target="_blank">View source</a>]
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/0994abe5de86c5b0bac3c18a22e9b8a92422517e/src/bytes.cr#L44" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1056,7 +1056,7 @@ petabytes</p></div>
       <br/>
       <div>
         
-          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bytes.cr#L12" target="_blank">View source</a>]
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/0994abe5de86c5b0bac3c18a22e9b8a92422517e/src/bytes.cr#L12" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1077,7 +1077,7 @@ of two.</p></div>
       <br/>
       <div>
         
-          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bytes.cr#L12" target="_blank">View source</a>]
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/0994abe5de86c5b0bac3c18a22e9b8a92422517e/src/bytes.cr#L12" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1095,7 +1095,7 @@ of two.</p></div>
       <br/>
       <div>
         
-          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bytes.cr#L12" target="_blank">View source</a>]
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/0994abe5de86c5b0bac3c18a22e9b8a92422517e/src/bytes.cr#L12" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1116,7 +1116,7 @@ of two.</p></div>
       <br/>
       <div>
         
-          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bytes.cr#L12" target="_blank">View source</a>]
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/0994abe5de86c5b0bac3c18a22e9b8a92422517e/src/bytes.cr#L12" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1134,7 +1134,7 @@ of two.</p></div>
       <br/>
       <div>
         
-          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bytes.cr#L12" target="_blank">View source</a>]
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/0994abe5de86c5b0bac3c18a22e9b8a92422517e/src/bytes.cr#L12" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1155,7 +1155,7 @@ of two.</p></div>
       <br/>
       <div>
         
-          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bytes.cr#L12" target="_blank">View source</a>]
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/0994abe5de86c5b0bac3c18a22e9b8a92422517e/src/bytes.cr#L12" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1173,7 +1173,7 @@ of two.</p></div>
       <br/>
       <div>
         
-          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bytes.cr#L12" target="_blank">View source</a>]
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/0994abe5de86c5b0bac3c18a22e9b8a92422517e/src/bytes.cr#L12" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1194,7 +1194,7 @@ of two.</p></div>
       <br/>
       <div>
         
-          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bytes.cr#L12" target="_blank">View source</a>]
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/0994abe5de86c5b0bac3c18a22e9b8a92422517e/src/bytes.cr#L12" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1212,7 +1212,7 @@ of two.</p></div>
       <br/>
       <div>
         
-          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bytes.cr#L12" target="_blank">View source</a>]
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/0994abe5de86c5b0bac3c18a22e9b8a92422517e/src/bytes.cr#L12" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1233,7 +1233,7 @@ of two.</p></div>
       <br/>
       <div>
         
-          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bytes.cr#L12" target="_blank">View source</a>]
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/0994abe5de86c5b0bac3c18a22e9b8a92422517e/src/bytes.cr#L12" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1251,7 +1251,7 @@ of two.</p></div>
       <br/>
       <div>
         
-          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bytes.cr#L12" target="_blank">View source</a>]
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/0994abe5de86c5b0bac3c18a22e9b8a92422517e/src/bytes.cr#L12" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1272,7 +1272,7 @@ of two.</p></div>
       <br/>
       <div>
         
-          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bytes.cr#L12" target="_blank">View source</a>]
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/0994abe5de86c5b0bac3c18a22e9b8a92422517e/src/bytes.cr#L12" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1290,7 +1290,7 @@ of two.</p></div>
       <br/>
       <div>
         
-          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bytes.cr#L12" target="_blank">View source</a>]
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/0994abe5de86c5b0bac3c18a22e9b8a92422517e/src/bytes.cr#L12" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1311,7 +1311,7 @@ of two.</p></div>
       <br/>
       <div>
         
-          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bytes.cr#L12" target="_blank">View source</a>]
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/0994abe5de86c5b0bac3c18a22e9b8a92422517e/src/bytes.cr#L12" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1329,7 +1329,7 @@ of two.</p></div>
       <br/>
       <div>
         
-          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bytes.cr#L12" target="_blank">View source</a>]
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/0994abe5de86c5b0bac3c18a22e9b8a92422517e/src/bytes.cr#L12" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1350,7 +1350,7 @@ of two.</p></div>
       <br/>
       <div>
         
-          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bytes.cr#L12" target="_blank">View source</a>]
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/0994abe5de86c5b0bac3c18a22e9b8a92422517e/src/bytes.cr#L12" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1368,7 +1368,7 @@ of two.</p></div>
       <br/>
       <div>
         
-          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bytes.cr#L12" target="_blank">View source</a>]
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/0994abe5de86c5b0bac3c18a22e9b8a92422517e/src/bytes.cr#L12" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1389,43 +1389,25 @@ of two.</p></div>
       <br/>
       <div>
         
-          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bytes.cr#L12" target="_blank">View source</a>]
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/0994abe5de86c5b0bac3c18a22e9b8a92422517e/src/bytes.cr#L12" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="to_teb_s-instance-method">
+    <div class="entry-detail" id="to_tb_s-instance-method">
       <div class="signature">
         
-        def <strong>to_teb_s</strong>
+        def <strong>to_tb_s</strong>
 
-        <a class="method-permalink" href="#to_teb_s-instance-method">#</a>
+        <a class="method-permalink" href="#to_tb_s-instance-method">#</a>
       </div>
       
-        <div class="doc"><p>Produce a string representing this byte value as teB.</p></div>
+        <div class="doc"><p>Produce a string representing this byte value as tB.</p></div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bytes.cr#L12" target="_blank">View source</a>]
-        
-      </div>
-    </div>
-  
-    <div class="entry-detail" id="to_tera_s-instance-method">
-      <div class="signature">
-        
-        def <strong>to_tera_s</strong>
-
-        <a class="method-permalink" href="#to_tera_s-instance-method">#</a>
-      </div>
-      
-        <div class="doc"><p>Produce a string representing this byte value as terabytes.</p></div>
-      
-      <br/>
-      <div>
-        
-          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bytes.cr#L12" target="_blank">View source</a>]
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/0994abe5de86c5b0bac3c18a22e9b8a92422517e/src/bytes.cr#L12" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1444,7 +1426,25 @@ terabits</p></div>
       <br/>
       <div>
         
-          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bytes.cr#L12" target="_blank">View source</a>]
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/0994abe5de86c5b0bac3c18a22e9b8a92422517e/src/bytes.cr#L12" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_terabyte_s-instance-method">
+      <div class="signature">
+        
+        def <strong>to_terabyte_s</strong>
+
+        <a class="method-permalink" href="#to_terabyte_s-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Produce a string representing this byte value as terabytes.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/0994abe5de86c5b0bac3c18a22e9b8a92422517e/src/bytes.cr#L12" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1463,43 +1463,25 @@ terabytes</p></div>
       <br/>
       <div>
         
-          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bytes.cr#L12" target="_blank">View source</a>]
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/0994abe5de86c5b0bac3c18a22e9b8a92422517e/src/bytes.cr#L12" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="to_yob_s-instance-method">
+    <div class="entry-detail" id="to_yb_s-instance-method">
       <div class="signature">
         
-        def <strong>to_yob_s</strong>
+        def <strong>to_yb_s</strong>
 
-        <a class="method-permalink" href="#to_yob_s-instance-method">#</a>
+        <a class="method-permalink" href="#to_yb_s-instance-method">#</a>
       </div>
       
-        <div class="doc"><p>Produce a string representing this byte value as yoB.</p></div>
+        <div class="doc"><p>Produce a string representing this byte value as yB.</p></div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bytes.cr#L12" target="_blank">View source</a>]
-        
-      </div>
-    </div>
-  
-    <div class="entry-detail" id="to_yotta_s-instance-method">
-      <div class="signature">
-        
-        def <strong>to_yotta_s</strong>
-
-        <a class="method-permalink" href="#to_yotta_s-instance-method">#</a>
-      </div>
-      
-        <div class="doc"><p>Produce a string representing this byte value as yottabytes.</p></div>
-      
-      <br/>
-      <div>
-        
-          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bytes.cr#L12" target="_blank">View source</a>]
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/0994abe5de86c5b0bac3c18a22e9b8a92422517e/src/bytes.cr#L12" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1518,7 +1500,25 @@ yottabits</p></div>
       <br/>
       <div>
         
-          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bytes.cr#L12" target="_blank">View source</a>]
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/0994abe5de86c5b0bac3c18a22e9b8a92422517e/src/bytes.cr#L12" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_yottabyte_s-instance-method">
+      <div class="signature">
+        
+        def <strong>to_yottabyte_s</strong>
+
+        <a class="method-permalink" href="#to_yottabyte_s-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Produce a string representing this byte value as yottabytes.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/0994abe5de86c5b0bac3c18a22e9b8a92422517e/src/bytes.cr#L12" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1537,43 +1537,25 @@ yottabytes</p></div>
       <br/>
       <div>
         
-          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bytes.cr#L12" target="_blank">View source</a>]
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/0994abe5de86c5b0bac3c18a22e9b8a92422517e/src/bytes.cr#L12" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="to_zeb_s-instance-method">
+    <div class="entry-detail" id="to_zb_s-instance-method">
       <div class="signature">
         
-        def <strong>to_zeb_s</strong>
+        def <strong>to_zb_s</strong>
 
-        <a class="method-permalink" href="#to_zeb_s-instance-method">#</a>
+        <a class="method-permalink" href="#to_zb_s-instance-method">#</a>
       </div>
       
-        <div class="doc"><p>Produce a string representing this byte value as zeB.</p></div>
+        <div class="doc"><p>Produce a string representing this byte value as zB.</p></div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bytes.cr#L12" target="_blank">View source</a>]
-        
-      </div>
-    </div>
-  
-    <div class="entry-detail" id="to_zetta_s-instance-method">
-      <div class="signature">
-        
-        def <strong>to_zetta_s</strong>
-
-        <a class="method-permalink" href="#to_zetta_s-instance-method">#</a>
-      </div>
-      
-        <div class="doc"><p>Produce a string representing this byte value as zettabytes.</p></div>
-      
-      <br/>
-      <div>
-        
-          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bytes.cr#L12" target="_blank">View source</a>]
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/0994abe5de86c5b0bac3c18a22e9b8a92422517e/src/bytes.cr#L12" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1592,7 +1574,25 @@ zettabits</p></div>
       <br/>
       <div>
         
-          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bytes.cr#L12" target="_blank">View source</a>]
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/0994abe5de86c5b0bac3c18a22e9b8a92422517e/src/bytes.cr#L12" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_zettabyte_s-instance-method">
+      <div class="signature">
+        
+        def <strong>to_zettabyte_s</strong>
+
+        <a class="method-permalink" href="#to_zettabyte_s-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Produce a string representing this byte value as zettabytes.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/0994abe5de86c5b0bac3c18a22e9b8a92422517e/src/bytes.cr#L12" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1611,7 +1611,7 @@ zettabytes</p></div>
       <br/>
       <div>
         
-          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bytes.cr#L12" target="_blank">View source</a>]
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/0994abe5de86c5b0bac3c18a22e9b8a92422517e/src/bytes.cr#L12" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1632,7 +1632,7 @@ zettabytes</p></div>
       <br/>
       <div>
         
-          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bytes.cr#L10" target="_blank">View source</a>]
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/0994abe5de86c5b0bac3c18a22e9b8a92422517e/src/bytes.cr#L10" target="_blank">View source</a>]
         
       </div>
     </div>
