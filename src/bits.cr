@@ -1,17 +1,45 @@
+require "./memory_conversion"
 struct MemoryConversion::Bits
-  def initialize(@value : Float64); end
+  @value : Float64
+  def initialize(value)
+    @value = value.to_f64
+  end
 
   forward_missing_to @value
 
   {% for prefix, scale in MemoryConversion::FACTORS %}
-    def to_{{prefix.id}}bits : Float
+    # Convert this number of bits to the equivalent number of
+    # {{prefix.id}}bits
+    def to_{{prefix.id}}bits : Float64
       self / (1 << {{scale}})
     end
-    def to_{{prefix.id}}bytes : Float
+
+    # Convert this number of bits to the equivalent number of
+    # {{prefix.id}}bytes
+    def to_{{prefix.id}}bytes : Float64
       to_{{prefix.id}}bits / 8
     end
+    def to_storage_{{prefix.id}}bytes : Float64
+      to_storage_{{prefix.id}}bits / 8
+    end
+    # Convert this number of bits to the equivalent number of
+    # {{prefix.id}}bits. This uses the metric used by storage manufacturers
+    # to inflate their capacity values, by using powers of 10 instead of powers
+    # of two.
+    def to_storage_{{prefix.id}}bits : Float64
+      self / (10 ** {{scale}})
+    end
+    # Convert to storage bits and then divide by 8.
+    def to_storage_{{prefix.id}}bytes : Float64
+      to_storage_{{prefix.id}}bits / 8
+    end
+    # Produce a string representing this bit value as {{prefix.id}}bits.
     def to_{{prefix.id}}_s
       "#{to_{{prefix.id}}bits}{{prefix.capitalize.id}}bits"
+    end
+    # Produce a string representing this bit value as {{prefix[0..1].id}}b.
+    def to_{{prefix[0..1].downcase.id}}b_s
+      "#{to_{{prefix.id}}bits}{{prefix[0..1].id}}b"
     end
     {% end %}
 

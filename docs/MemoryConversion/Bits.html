@@ -1,0 +1,1645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Crystal Docs 0.30.1">
+
+
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="../js/doc.js"></script>
+<script type="text/javascript">
+  CrystalDoc.base_path = "../";
+</script>
+
+  <meta id="repository-name" content="github.com/dscottboggs/memory_conversion">
+  <title>MemoryConversion::Bits - github.com/dscottboggs/memory_conversion</title>
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false" aria-label="Search">
+    </div>
+
+    <div class="repository-links">
+      <a href="../index.html">README</a>
+    </div>
+  </div>
+
+  <div class="search-results" class="hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class="parent open current" data-id="github.com/dscottboggs/memory_conversion/MemoryConversion" data-name="memoryconversion">
+      <a href="../MemoryConversion.html">MemoryConversion</a>
+      
+        <ul>
+  
+  <li class=" current" data-id="github.com/dscottboggs/memory_conversion/MemoryConversion/Bits" data-name="memoryconversion::bits">
+      <a href="../MemoryConversion/Bits.html">Bits</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/dscottboggs/memory_conversion/MemoryConversion/Bytes" data-name="memoryconversion::bytes">
+      <a href="../MemoryConversion/Bytes.html">Bytes</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/dscottboggs/memory_conversion/Number" data-name="number">
+      <a href="../Number.html">Number</a>
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">struct</span> MemoryConversion::Bits
+
+</h1>
+
+
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="../MemoryConversion/Bits.html">MemoryConversion::Bits</a></li><li class="superclass">Struct</li><li class="superclass">Value</li><li class="superclass">Object</li></ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>Defined in:</h2>
+  
+    
+      <a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bits.cr#L2" target="_blank">
+        bits.cr
+      </a>
+    
+    <br/>
+  
+
+
+
+
+
+  <h2>Constructors</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#new(value)-class-method" class="signature"><strong>.new</strong>(value)</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+  <h2>Instance Method Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#to__s-instance-method" class="signature"><strong>#to__s</strong></a>
+        
+          <div class="summary"><p>Produce a string representing this bit value as bits.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_b_s-instance-method" class="signature"><strong>#to_b_s</strong></a>
+        
+          <div class="summary"><p>Produce a string representing this bit value as b.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_bits:Float64-instance-method" class="signature"><strong>#to_bits</strong> : Float64</a>
+        
+          <div class="summary"><p>Convert this number of bits to the equivalent number of bits</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_bytes:Float64-instance-method" class="signature"><strong>#to_bytes</strong> : Float64</a>
+        
+          <div class="summary"><p>Convert this number of bits to the equivalent number of bytes</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_exa_s-instance-method" class="signature"><strong>#to_exa_s</strong></a>
+        
+          <div class="summary"><p>Produce a string representing this bit value as exabits.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_exabits:Float64-instance-method" class="signature"><strong>#to_exabits</strong> : Float64</a>
+        
+          <div class="summary"><p>Convert this number of bits to the equivalent number of exabits</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_exabytes:Float64-instance-method" class="signature"><strong>#to_exabytes</strong> : Float64</a>
+        
+          <div class="summary"><p>Convert this number of bits to the equivalent number of exabytes</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_exb_s-instance-method" class="signature"><strong>#to_exb_s</strong></a>
+        
+          <div class="summary"><p>Produce a string representing this bit value as exb.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_gib_s-instance-method" class="signature"><strong>#to_gib_s</strong></a>
+        
+          <div class="summary"><p>Produce a string representing this bit value as gib.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_giga_s-instance-method" class="signature"><strong>#to_giga_s</strong></a>
+        
+          <div class="summary"><p>Produce a string representing this bit value as gigabits.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_gigabits:Float64-instance-method" class="signature"><strong>#to_gigabits</strong> : Float64</a>
+        
+          <div class="summary"><p>Convert this number of bits to the equivalent number of gigabits</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_gigabytes:Float64-instance-method" class="signature"><strong>#to_gigabytes</strong> : Float64</a>
+        
+          <div class="summary"><p>Convert this number of bits to the equivalent number of gigabytes</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_kib_s-instance-method" class="signature"><strong>#to_kib_s</strong></a>
+        
+          <div class="summary"><p>Produce a string representing this bit value as kib.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_kilo_s-instance-method" class="signature"><strong>#to_kilo_s</strong></a>
+        
+          <div class="summary"><p>Produce a string representing this bit value as kilobits.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_kilobits:Float64-instance-method" class="signature"><strong>#to_kilobits</strong> : Float64</a>
+        
+          <div class="summary"><p>Convert this number of bits to the equivalent number of kilobits</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_kilobytes:Float64-instance-method" class="signature"><strong>#to_kilobytes</strong> : Float64</a>
+        
+          <div class="summary"><p>Convert this number of bits to the equivalent number of kilobytes</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_meb_s-instance-method" class="signature"><strong>#to_meb_s</strong></a>
+        
+          <div class="summary"><p>Produce a string representing this bit value as meb.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_mega_s-instance-method" class="signature"><strong>#to_mega_s</strong></a>
+        
+          <div class="summary"><p>Produce a string representing this bit value as megabits.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_megabits:Float64-instance-method" class="signature"><strong>#to_megabits</strong> : Float64</a>
+        
+          <div class="summary"><p>Convert this number of bits to the equivalent number of megabits</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_megabytes:Float64-instance-method" class="signature"><strong>#to_megabytes</strong> : Float64</a>
+        
+          <div class="summary"><p>Convert this number of bits to the equivalent number of megabytes</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_peb_s-instance-method" class="signature"><strong>#to_peb_s</strong></a>
+        
+          <div class="summary"><p>Produce a string representing this bit value as peb.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_peta_s-instance-method" class="signature"><strong>#to_peta_s</strong></a>
+        
+          <div class="summary"><p>Produce a string representing this bit value as petabits.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_petabits:Float64-instance-method" class="signature"><strong>#to_petabits</strong> : Float64</a>
+        
+          <div class="summary"><p>Convert this number of bits to the equivalent number of petabits</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_petabytes:Float64-instance-method" class="signature"><strong>#to_petabytes</strong> : Float64</a>
+        
+          <div class="summary"><p>Convert this number of bits to the equivalent number of petabytes</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_s(scale:Symbol)-instance-method" class="signature"><strong>#to_s</strong>(scale : Symbol)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_storage_bits:Float64-instance-method" class="signature"><strong>#to_storage_bits</strong> : Float64</a>
+        
+          <div class="summary"><p>Convert this number of bits to the equivalent number of bits.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_storage_bytes:Float64-instance-method" class="signature"><strong>#to_storage_bytes</strong> : Float64</a>
+        
+          <div class="summary"><p>Convert to storage bits and then divide by 8.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_storage_exabits:Float64-instance-method" class="signature"><strong>#to_storage_exabits</strong> : Float64</a>
+        
+          <div class="summary"><p>Convert this number of bits to the equivalent number of exabits.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_storage_exabytes:Float64-instance-method" class="signature"><strong>#to_storage_exabytes</strong> : Float64</a>
+        
+          <div class="summary"><p>Convert to storage bits and then divide by 8.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_storage_gigabits:Float64-instance-method" class="signature"><strong>#to_storage_gigabits</strong> : Float64</a>
+        
+          <div class="summary"><p>Convert this number of bits to the equivalent number of gigabits.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_storage_gigabytes:Float64-instance-method" class="signature"><strong>#to_storage_gigabytes</strong> : Float64</a>
+        
+          <div class="summary"><p>Convert to storage bits and then divide by 8.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_storage_kilobits:Float64-instance-method" class="signature"><strong>#to_storage_kilobits</strong> : Float64</a>
+        
+          <div class="summary"><p>Convert this number of bits to the equivalent number of kilobits.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_storage_kilobytes:Float64-instance-method" class="signature"><strong>#to_storage_kilobytes</strong> : Float64</a>
+        
+          <div class="summary"><p>Convert to storage bits and then divide by 8.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_storage_megabits:Float64-instance-method" class="signature"><strong>#to_storage_megabits</strong> : Float64</a>
+        
+          <div class="summary"><p>Convert this number of bits to the equivalent number of megabits.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_storage_megabytes:Float64-instance-method" class="signature"><strong>#to_storage_megabytes</strong> : Float64</a>
+        
+          <div class="summary"><p>Convert to storage bits and then divide by 8.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_storage_petabits:Float64-instance-method" class="signature"><strong>#to_storage_petabits</strong> : Float64</a>
+        
+          <div class="summary"><p>Convert this number of bits to the equivalent number of petabits.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_storage_petabytes:Float64-instance-method" class="signature"><strong>#to_storage_petabytes</strong> : Float64</a>
+        
+          <div class="summary"><p>Convert to storage bits and then divide by 8.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_storage_terabits:Float64-instance-method" class="signature"><strong>#to_storage_terabits</strong> : Float64</a>
+        
+          <div class="summary"><p>Convert this number of bits to the equivalent number of terabits.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_storage_terabytes:Float64-instance-method" class="signature"><strong>#to_storage_terabytes</strong> : Float64</a>
+        
+          <div class="summary"><p>Convert to storage bits and then divide by 8.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_storage_yottabits:Float64-instance-method" class="signature"><strong>#to_storage_yottabits</strong> : Float64</a>
+        
+          <div class="summary"><p>Convert this number of bits to the equivalent number of yottabits.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_storage_yottabytes:Float64-instance-method" class="signature"><strong>#to_storage_yottabytes</strong> : Float64</a>
+        
+          <div class="summary"><p>Convert to storage bits and then divide by 8.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_storage_zettabits:Float64-instance-method" class="signature"><strong>#to_storage_zettabits</strong> : Float64</a>
+        
+          <div class="summary"><p>Convert this number of bits to the equivalent number of zettabits.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_storage_zettabytes:Float64-instance-method" class="signature"><strong>#to_storage_zettabytes</strong> : Float64</a>
+        
+          <div class="summary"><p>Convert to storage bits and then divide by 8.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_teb_s-instance-method" class="signature"><strong>#to_teb_s</strong></a>
+        
+          <div class="summary"><p>Produce a string representing this bit value as teb.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_tera_s-instance-method" class="signature"><strong>#to_tera_s</strong></a>
+        
+          <div class="summary"><p>Produce a string representing this bit value as terabits.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_terabits:Float64-instance-method" class="signature"><strong>#to_terabits</strong> : Float64</a>
+        
+          <div class="summary"><p>Convert this number of bits to the equivalent number of terabits</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_terabytes:Float64-instance-method" class="signature"><strong>#to_terabytes</strong> : Float64</a>
+        
+          <div class="summary"><p>Convert this number of bits to the equivalent number of terabytes</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_yob_s-instance-method" class="signature"><strong>#to_yob_s</strong></a>
+        
+          <div class="summary"><p>Produce a string representing this bit value as yob.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_yotta_s-instance-method" class="signature"><strong>#to_yotta_s</strong></a>
+        
+          <div class="summary"><p>Produce a string representing this bit value as yottabits.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_yottabits:Float64-instance-method" class="signature"><strong>#to_yottabits</strong> : Float64</a>
+        
+          <div class="summary"><p>Convert this number of bits to the equivalent number of yottabits</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_yottabytes:Float64-instance-method" class="signature"><strong>#to_yottabytes</strong> : Float64</a>
+        
+          <div class="summary"><p>Convert this number of bits to the equivalent number of yottabytes</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_zeb_s-instance-method" class="signature"><strong>#to_zeb_s</strong></a>
+        
+          <div class="summary"><p>Produce a string representing this bit value as zeb.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_zetta_s-instance-method" class="signature"><strong>#to_zetta_s</strong></a>
+        
+          <div class="summary"><p>Produce a string representing this bit value as zettabits.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_zettabits:Float64-instance-method" class="signature"><strong>#to_zettabits</strong> : Float64</a>
+        
+          <div class="summary"><p>Convert this number of bits to the equivalent number of zettabits</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_zettabytes:Float64-instance-method" class="signature"><strong>#to_zettabytes</strong> : Float64</a>
+        
+          <div class="summary"><p>Convert this number of bits to the equivalent number of zettabytes</p></div>
+        
+      </li>
+    
+  </ul>
+
+
+
+  <h2>Macro Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#method_missing(call)-macro" class="signature"><strong>method_missing</strong>(call)</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+<div class="methods-inherited">
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+</div>
+
+
+  <h2>Constructor Detail</h2>
+  
+    <div class="entry-detail" id="new(value)-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong>(value)
+
+        <a class="method-permalink" href="#new(value)-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bits.cr#L4" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+
+  <h2>Instance Method Detail</h2>
+  
+    <div class="entry-detail" id="to__s-instance-method">
+      <div class="signature">
+        
+        def <strong>to__s</strong>
+
+        <a class="method-permalink" href="#to__s-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Produce a string representing this bit value as bits.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bits.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_b_s-instance-method">
+      <div class="signature">
+        
+        def <strong>to_b_s</strong>
+
+        <a class="method-permalink" href="#to_b_s-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Produce a string representing this bit value as b.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bits.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_bits:Float64-instance-method">
+      <div class="signature">
+        
+        def <strong>to_bits</strong> : Float64
+
+        <a class="method-permalink" href="#to_bits:Float64-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Convert this number of bits to the equivalent number of
+bits</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bits.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_bytes:Float64-instance-method">
+      <div class="signature">
+        
+        def <strong>to_bytes</strong> : Float64
+
+        <a class="method-permalink" href="#to_bytes:Float64-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Convert this number of bits to the equivalent number of
+bytes</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bits.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_exa_s-instance-method">
+      <div class="signature">
+        
+        def <strong>to_exa_s</strong>
+
+        <a class="method-permalink" href="#to_exa_s-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Produce a string representing this bit value as exabits.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bits.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_exabits:Float64-instance-method">
+      <div class="signature">
+        
+        def <strong>to_exabits</strong> : Float64
+
+        <a class="method-permalink" href="#to_exabits:Float64-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Convert this number of bits to the equivalent number of
+exabits</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bits.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_exabytes:Float64-instance-method">
+      <div class="signature">
+        
+        def <strong>to_exabytes</strong> : Float64
+
+        <a class="method-permalink" href="#to_exabytes:Float64-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Convert this number of bits to the equivalent number of
+exabytes</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bits.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_exb_s-instance-method">
+      <div class="signature">
+        
+        def <strong>to_exb_s</strong>
+
+        <a class="method-permalink" href="#to_exb_s-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Produce a string representing this bit value as exb.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bits.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_gib_s-instance-method">
+      <div class="signature">
+        
+        def <strong>to_gib_s</strong>
+
+        <a class="method-permalink" href="#to_gib_s-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Produce a string representing this bit value as gib.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bits.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_giga_s-instance-method">
+      <div class="signature">
+        
+        def <strong>to_giga_s</strong>
+
+        <a class="method-permalink" href="#to_giga_s-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Produce a string representing this bit value as gigabits.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bits.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_gigabits:Float64-instance-method">
+      <div class="signature">
+        
+        def <strong>to_gigabits</strong> : Float64
+
+        <a class="method-permalink" href="#to_gigabits:Float64-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Convert this number of bits to the equivalent number of
+gigabits</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bits.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_gigabytes:Float64-instance-method">
+      <div class="signature">
+        
+        def <strong>to_gigabytes</strong> : Float64
+
+        <a class="method-permalink" href="#to_gigabytes:Float64-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Convert this number of bits to the equivalent number of
+gigabytes</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bits.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_kib_s-instance-method">
+      <div class="signature">
+        
+        def <strong>to_kib_s</strong>
+
+        <a class="method-permalink" href="#to_kib_s-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Produce a string representing this bit value as kib.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bits.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_kilo_s-instance-method">
+      <div class="signature">
+        
+        def <strong>to_kilo_s</strong>
+
+        <a class="method-permalink" href="#to_kilo_s-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Produce a string representing this bit value as kilobits.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bits.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_kilobits:Float64-instance-method">
+      <div class="signature">
+        
+        def <strong>to_kilobits</strong> : Float64
+
+        <a class="method-permalink" href="#to_kilobits:Float64-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Convert this number of bits to the equivalent number of
+kilobits</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bits.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_kilobytes:Float64-instance-method">
+      <div class="signature">
+        
+        def <strong>to_kilobytes</strong> : Float64
+
+        <a class="method-permalink" href="#to_kilobytes:Float64-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Convert this number of bits to the equivalent number of
+kilobytes</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bits.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_meb_s-instance-method">
+      <div class="signature">
+        
+        def <strong>to_meb_s</strong>
+
+        <a class="method-permalink" href="#to_meb_s-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Produce a string representing this bit value as meb.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bits.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_mega_s-instance-method">
+      <div class="signature">
+        
+        def <strong>to_mega_s</strong>
+
+        <a class="method-permalink" href="#to_mega_s-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Produce a string representing this bit value as megabits.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bits.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_megabits:Float64-instance-method">
+      <div class="signature">
+        
+        def <strong>to_megabits</strong> : Float64
+
+        <a class="method-permalink" href="#to_megabits:Float64-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Convert this number of bits to the equivalent number of
+megabits</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bits.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_megabytes:Float64-instance-method">
+      <div class="signature">
+        
+        def <strong>to_megabytes</strong> : Float64
+
+        <a class="method-permalink" href="#to_megabytes:Float64-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Convert this number of bits to the equivalent number of
+megabytes</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bits.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_peb_s-instance-method">
+      <div class="signature">
+        
+        def <strong>to_peb_s</strong>
+
+        <a class="method-permalink" href="#to_peb_s-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Produce a string representing this bit value as peb.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bits.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_peta_s-instance-method">
+      <div class="signature">
+        
+        def <strong>to_peta_s</strong>
+
+        <a class="method-permalink" href="#to_peta_s-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Produce a string representing this bit value as petabits.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bits.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_petabits:Float64-instance-method">
+      <div class="signature">
+        
+        def <strong>to_petabits</strong> : Float64
+
+        <a class="method-permalink" href="#to_petabits:Float64-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Convert this number of bits to the equivalent number of
+petabits</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bits.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_petabytes:Float64-instance-method">
+      <div class="signature">
+        
+        def <strong>to_petabytes</strong> : Float64
+
+        <a class="method-permalink" href="#to_petabytes:Float64-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Convert this number of bits to the equivalent number of
+petabytes</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bits.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_s(scale:Symbol)-instance-method">
+      <div class="signature">
+        
+        def <strong>to_s</strong>(scale : Symbol)
+
+        <a class="method-permalink" href="#to_s(scale:Symbol)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bits.cr#L46" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_storage_bits:Float64-instance-method">
+      <div class="signature">
+        
+        def <strong>to_storage_bits</strong> : Float64
+
+        <a class="method-permalink" href="#to_storage_bits:Float64-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Convert this number of bits to the equivalent number of
+bits. This uses the metric used by storage manufacturers
+to inflate their capacity values, by using powers of 10 instead of powers
+of two.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bits.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_storage_bytes:Float64-instance-method">
+      <div class="signature">
+        
+        def <strong>to_storage_bytes</strong> : Float64
+
+        <a class="method-permalink" href="#to_storage_bytes:Float64-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Convert to storage bits and then divide by 8.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bits.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_storage_exabits:Float64-instance-method">
+      <div class="signature">
+        
+        def <strong>to_storage_exabits</strong> : Float64
+
+        <a class="method-permalink" href="#to_storage_exabits:Float64-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Convert this number of bits to the equivalent number of
+exabits. This uses the metric used by storage manufacturers
+to inflate their capacity values, by using powers of 10 instead of powers
+of two.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bits.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_storage_exabytes:Float64-instance-method">
+      <div class="signature">
+        
+        def <strong>to_storage_exabytes</strong> : Float64
+
+        <a class="method-permalink" href="#to_storage_exabytes:Float64-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Convert to storage bits and then divide by 8.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bits.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_storage_gigabits:Float64-instance-method">
+      <div class="signature">
+        
+        def <strong>to_storage_gigabits</strong> : Float64
+
+        <a class="method-permalink" href="#to_storage_gigabits:Float64-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Convert this number of bits to the equivalent number of
+gigabits. This uses the metric used by storage manufacturers
+to inflate their capacity values, by using powers of 10 instead of powers
+of two.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bits.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_storage_gigabytes:Float64-instance-method">
+      <div class="signature">
+        
+        def <strong>to_storage_gigabytes</strong> : Float64
+
+        <a class="method-permalink" href="#to_storage_gigabytes:Float64-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Convert to storage bits and then divide by 8.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bits.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_storage_kilobits:Float64-instance-method">
+      <div class="signature">
+        
+        def <strong>to_storage_kilobits</strong> : Float64
+
+        <a class="method-permalink" href="#to_storage_kilobits:Float64-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Convert this number of bits to the equivalent number of
+kilobits. This uses the metric used by storage manufacturers
+to inflate their capacity values, by using powers of 10 instead of powers
+of two.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bits.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_storage_kilobytes:Float64-instance-method">
+      <div class="signature">
+        
+        def <strong>to_storage_kilobytes</strong> : Float64
+
+        <a class="method-permalink" href="#to_storage_kilobytes:Float64-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Convert to storage bits and then divide by 8.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bits.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_storage_megabits:Float64-instance-method">
+      <div class="signature">
+        
+        def <strong>to_storage_megabits</strong> : Float64
+
+        <a class="method-permalink" href="#to_storage_megabits:Float64-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Convert this number of bits to the equivalent number of
+megabits. This uses the metric used by storage manufacturers
+to inflate their capacity values, by using powers of 10 instead of powers
+of two.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bits.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_storage_megabytes:Float64-instance-method">
+      <div class="signature">
+        
+        def <strong>to_storage_megabytes</strong> : Float64
+
+        <a class="method-permalink" href="#to_storage_megabytes:Float64-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Convert to storage bits and then divide by 8.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bits.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_storage_petabits:Float64-instance-method">
+      <div class="signature">
+        
+        def <strong>to_storage_petabits</strong> : Float64
+
+        <a class="method-permalink" href="#to_storage_petabits:Float64-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Convert this number of bits to the equivalent number of
+petabits. This uses the metric used by storage manufacturers
+to inflate their capacity values, by using powers of 10 instead of powers
+of two.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bits.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_storage_petabytes:Float64-instance-method">
+      <div class="signature">
+        
+        def <strong>to_storage_petabytes</strong> : Float64
+
+        <a class="method-permalink" href="#to_storage_petabytes:Float64-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Convert to storage bits and then divide by 8.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bits.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_storage_terabits:Float64-instance-method">
+      <div class="signature">
+        
+        def <strong>to_storage_terabits</strong> : Float64
+
+        <a class="method-permalink" href="#to_storage_terabits:Float64-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Convert this number of bits to the equivalent number of
+terabits. This uses the metric used by storage manufacturers
+to inflate their capacity values, by using powers of 10 instead of powers
+of two.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bits.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_storage_terabytes:Float64-instance-method">
+      <div class="signature">
+        
+        def <strong>to_storage_terabytes</strong> : Float64
+
+        <a class="method-permalink" href="#to_storage_terabytes:Float64-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Convert to storage bits and then divide by 8.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bits.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_storage_yottabits:Float64-instance-method">
+      <div class="signature">
+        
+        def <strong>to_storage_yottabits</strong> : Float64
+
+        <a class="method-permalink" href="#to_storage_yottabits:Float64-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Convert this number of bits to the equivalent number of
+yottabits. This uses the metric used by storage manufacturers
+to inflate their capacity values, by using powers of 10 instead of powers
+of two.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bits.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_storage_yottabytes:Float64-instance-method">
+      <div class="signature">
+        
+        def <strong>to_storage_yottabytes</strong> : Float64
+
+        <a class="method-permalink" href="#to_storage_yottabytes:Float64-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Convert to storage bits and then divide by 8.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bits.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_storage_zettabits:Float64-instance-method">
+      <div class="signature">
+        
+        def <strong>to_storage_zettabits</strong> : Float64
+
+        <a class="method-permalink" href="#to_storage_zettabits:Float64-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Convert this number of bits to the equivalent number of
+zettabits. This uses the metric used by storage manufacturers
+to inflate their capacity values, by using powers of 10 instead of powers
+of two.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bits.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_storage_zettabytes:Float64-instance-method">
+      <div class="signature">
+        
+        def <strong>to_storage_zettabytes</strong> : Float64
+
+        <a class="method-permalink" href="#to_storage_zettabytes:Float64-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Convert to storage bits and then divide by 8.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bits.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_teb_s-instance-method">
+      <div class="signature">
+        
+        def <strong>to_teb_s</strong>
+
+        <a class="method-permalink" href="#to_teb_s-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Produce a string representing this bit value as teb.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bits.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_tera_s-instance-method">
+      <div class="signature">
+        
+        def <strong>to_tera_s</strong>
+
+        <a class="method-permalink" href="#to_tera_s-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Produce a string representing this bit value as terabits.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bits.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_terabits:Float64-instance-method">
+      <div class="signature">
+        
+        def <strong>to_terabits</strong> : Float64
+
+        <a class="method-permalink" href="#to_terabits:Float64-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Convert this number of bits to the equivalent number of
+terabits</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bits.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_terabytes:Float64-instance-method">
+      <div class="signature">
+        
+        def <strong>to_terabytes</strong> : Float64
+
+        <a class="method-permalink" href="#to_terabytes:Float64-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Convert this number of bits to the equivalent number of
+terabytes</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bits.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_yob_s-instance-method">
+      <div class="signature">
+        
+        def <strong>to_yob_s</strong>
+
+        <a class="method-permalink" href="#to_yob_s-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Produce a string representing this bit value as yob.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bits.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_yotta_s-instance-method">
+      <div class="signature">
+        
+        def <strong>to_yotta_s</strong>
+
+        <a class="method-permalink" href="#to_yotta_s-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Produce a string representing this bit value as yottabits.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bits.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_yottabits:Float64-instance-method">
+      <div class="signature">
+        
+        def <strong>to_yottabits</strong> : Float64
+
+        <a class="method-permalink" href="#to_yottabits:Float64-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Convert this number of bits to the equivalent number of
+yottabits</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bits.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_yottabytes:Float64-instance-method">
+      <div class="signature">
+        
+        def <strong>to_yottabytes</strong> : Float64
+
+        <a class="method-permalink" href="#to_yottabytes:Float64-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Convert this number of bits to the equivalent number of
+yottabytes</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bits.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_zeb_s-instance-method">
+      <div class="signature">
+        
+        def <strong>to_zeb_s</strong>
+
+        <a class="method-permalink" href="#to_zeb_s-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Produce a string representing this bit value as zeb.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bits.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_zetta_s-instance-method">
+      <div class="signature">
+        
+        def <strong>to_zetta_s</strong>
+
+        <a class="method-permalink" href="#to_zetta_s-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Produce a string representing this bit value as zettabits.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bits.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_zettabits:Float64-instance-method">
+      <div class="signature">
+        
+        def <strong>to_zettabits</strong> : Float64
+
+        <a class="method-permalink" href="#to_zettabits:Float64-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Convert this number of bits to the equivalent number of
+zettabits</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bits.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_zettabytes:Float64-instance-method">
+      <div class="signature">
+        
+        def <strong>to_zettabytes</strong> : Float64
+
+        <a class="method-permalink" href="#to_zettabytes:Float64-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Convert this number of bits to the equivalent number of
+zettabytes</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bits.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+  <h2>Macro Detail</h2>
+  
+    <div class="entry-detail" id="method_missing(call)-macro">
+      <div class="signature">
+        
+        macro <strong>method_missing</strong>(call)
+
+        <a class="method-permalink" href="#method_missing(call)-macro">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/bits.cr#L8" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+</div>
+
+</body>
+</html>

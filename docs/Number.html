@@ -1,0 +1,1712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Crystal Docs 0.30.1">
+
+
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="js/doc.js"></script>
+<script type="text/javascript">
+  CrystalDoc.base_path = "";
+</script>
+
+  <meta id="repository-name" content="github.com/dscottboggs/memory_conversion">
+  <title>Number - github.com/dscottboggs/memory_conversion</title>
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false" aria-label="Search">
+    </div>
+
+    <div class="repository-links">
+      <a href="index.html">README</a>
+    </div>
+  </div>
+
+  <div class="search-results" class="hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class="parent " data-id="github.com/dscottboggs/memory_conversion/MemoryConversion" data-name="memoryconversion">
+      <a href="MemoryConversion.html">MemoryConversion</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/dscottboggs/memory_conversion/MemoryConversion/Bits" data-name="memoryconversion::bits">
+      <a href="MemoryConversion/Bits.html">Bits</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/dscottboggs/memory_conversion/MemoryConversion/Bytes" data-name="memoryconversion::bytes">
+      <a href="MemoryConversion/Bytes.html">Bytes</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" current" data-id="github.com/dscottboggs/memory_conversion/Number" data-name="number">
+      <a href="Number.html">Number</a>
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">abstract struct</span> Number
+
+</h1>
+
+
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="Number.html">Number</a></li><li class="superclass">Value</li><li class="superclass">Object</li></ul>
+
+
+
+
+  <h2>Overview</h2>
+
+  <p>The top-level number type.</p>
+
+
+
+
+
+  <h2>Included Modules</h2>
+  <ul class="other-types-list">
+  
+    <li class="other-type">Comparable(<a href="Number.html">Number</a>)</li>
+  
+  </ul>
+
+
+
+
+
+
+
+
+
+
+  <h2>Defined in:</h2>
+  
+    
+      <a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/ext/number.cr#L1" target="_blank">
+        ext/number.cr
+      </a>
+    
+    <br/>
+  
+
+
+
+
+
+
+
+
+
+  <h2>Instance Method Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#bit-instance-method" class="signature"><strong>#bit</strong></a>
+        
+          <div class="summary"><p>Return a MemoryConversion::Bits which has this number of bits.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#bits-instance-method" class="signature"><strong>#bits</strong></a>
+        
+          <div class="summary"><p>Return a MemoryConversion::Bits which has this number of bits.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#byte-instance-method" class="signature"><strong>#byte</strong></a>
+        
+          <div class="summary"><p>Return a MemoryConversion::Bytes which has this number of bytes.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#bytes-instance-method" class="signature"><strong>#bytes</strong></a>
+        
+          <div class="summary"><p>Return a MemoryConversion::Bytes which has this number of bytes.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#exabit-instance-method" class="signature"><strong>#exabit</strong></a>
+        
+          <div class="summary"><p>Return a MemoryConversion::Bits which has this number of exabits.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#exabits-instance-method" class="signature"><strong>#exabits</strong></a>
+        
+          <div class="summary"><p>Return a MemoryConversion::Bits which has this number of exabits.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#exabyte-instance-method" class="signature"><strong>#exabyte</strong></a>
+        
+          <div class="summary"><p>Return a MemoryConversion::Bytes which has this number of exabytes.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#exabytes-instance-method" class="signature"><strong>#exabytes</strong></a>
+        
+          <div class="summary"><p>Return a MemoryConversion::Bytes which has this number of exabytes.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#gigabit-instance-method" class="signature"><strong>#gigabit</strong></a>
+        
+          <div class="summary"><p>Return a MemoryConversion::Bits which has this number of gigabits.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#gigabits-instance-method" class="signature"><strong>#gigabits</strong></a>
+        
+          <div class="summary"><p>Return a MemoryConversion::Bits which has this number of gigabits.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#gigabyte-instance-method" class="signature"><strong>#gigabyte</strong></a>
+        
+          <div class="summary"><p>Return a MemoryConversion::Bytes which has this number of gigabytes.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#gigabytes-instance-method" class="signature"><strong>#gigabytes</strong></a>
+        
+          <div class="summary"><p>Return a MemoryConversion::Bytes which has this number of gigabytes.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#kilobit-instance-method" class="signature"><strong>#kilobit</strong></a>
+        
+          <div class="summary"><p>Return a MemoryConversion::Bits which has this number of kilobits.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#kilobits-instance-method" class="signature"><strong>#kilobits</strong></a>
+        
+          <div class="summary"><p>Return a MemoryConversion::Bits which has this number of kilobits.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#kilobyte-instance-method" class="signature"><strong>#kilobyte</strong></a>
+        
+          <div class="summary"><p>Return a MemoryConversion::Bytes which has this number of kilobytes.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#kilobytes-instance-method" class="signature"><strong>#kilobytes</strong></a>
+        
+          <div class="summary"><p>Return a MemoryConversion::Bytes which has this number of kilobytes.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#megabit-instance-method" class="signature"><strong>#megabit</strong></a>
+        
+          <div class="summary"><p>Return a MemoryConversion::Bits which has this number of megabits.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#megabits-instance-method" class="signature"><strong>#megabits</strong></a>
+        
+          <div class="summary"><p>Return a MemoryConversion::Bits which has this number of megabits.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#megabyte-instance-method" class="signature"><strong>#megabyte</strong></a>
+        
+          <div class="summary"><p>Return a MemoryConversion::Bytes which has this number of megabytes.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#megabytes-instance-method" class="signature"><strong>#megabytes</strong></a>
+        
+          <div class="summary"><p>Return a MemoryConversion::Bytes which has this number of megabytes.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#petabit-instance-method" class="signature"><strong>#petabit</strong></a>
+        
+          <div class="summary"><p>Return a MemoryConversion::Bits which has this number of petabits.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#petabits-instance-method" class="signature"><strong>#petabits</strong></a>
+        
+          <div class="summary"><p>Return a MemoryConversion::Bits which has this number of petabits.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#petabyte-instance-method" class="signature"><strong>#petabyte</strong></a>
+        
+          <div class="summary"><p>Return a MemoryConversion::Bytes which has this number of petabytes.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#petabytes-instance-method" class="signature"><strong>#petabytes</strong></a>
+        
+          <div class="summary"><p>Return a MemoryConversion::Bytes which has this number of petabytes.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#storage_byte-instance-method" class="signature"><strong>#storage_byte</strong></a>
+        
+          <div class="summary"><p>Return a MemoryConversion::Bytes which has this number of bytes, as measured by storage manufacturers (i.e.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#storage_bytes-instance-method" class="signature"><strong>#storage_bytes</strong></a>
+        
+          <div class="summary"><p>Return a MemoryConversion::Bytes which has this number of bytes, as measured by storage manufacturers (i.e.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#storage_exabyte-instance-method" class="signature"><strong>#storage_exabyte</strong></a>
+        
+          <div class="summary"><p>Return a MemoryConversion::Bytes which has this number of exabytes, as measured by storage manufacturers (i.e.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#storage_exabytes-instance-method" class="signature"><strong>#storage_exabytes</strong></a>
+        
+          <div class="summary"><p>Return a MemoryConversion::Bytes which has this number of exabytes, as measured by storage manufacturers (i.e.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#storage_gigabyte-instance-method" class="signature"><strong>#storage_gigabyte</strong></a>
+        
+          <div class="summary"><p>Return a MemoryConversion::Bytes which has this number of gigabytes, as measured by storage manufacturers (i.e.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#storage_gigabytes-instance-method" class="signature"><strong>#storage_gigabytes</strong></a>
+        
+          <div class="summary"><p>Return a MemoryConversion::Bytes which has this number of gigabytes, as measured by storage manufacturers (i.e.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#storage_kilobyte-instance-method" class="signature"><strong>#storage_kilobyte</strong></a>
+        
+          <div class="summary"><p>Return a MemoryConversion::Bytes which has this number of kilobytes, as measured by storage manufacturers (i.e.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#storage_kilobytes-instance-method" class="signature"><strong>#storage_kilobytes</strong></a>
+        
+          <div class="summary"><p>Return a MemoryConversion::Bytes which has this number of kilobytes, as measured by storage manufacturers (i.e.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#storage_megabyte-instance-method" class="signature"><strong>#storage_megabyte</strong></a>
+        
+          <div class="summary"><p>Return a MemoryConversion::Bytes which has this number of megabytes, as measured by storage manufacturers (i.e.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#storage_megabytes-instance-method" class="signature"><strong>#storage_megabytes</strong></a>
+        
+          <div class="summary"><p>Return a MemoryConversion::Bytes which has this number of megabytes, as measured by storage manufacturers (i.e.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#storage_petabyte-instance-method" class="signature"><strong>#storage_petabyte</strong></a>
+        
+          <div class="summary"><p>Return a MemoryConversion::Bytes which has this number of petabytes, as measured by storage manufacturers (i.e.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#storage_petabytes-instance-method" class="signature"><strong>#storage_petabytes</strong></a>
+        
+          <div class="summary"><p>Return a MemoryConversion::Bytes which has this number of petabytes, as measured by storage manufacturers (i.e.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#storage_terabyte-instance-method" class="signature"><strong>#storage_terabyte</strong></a>
+        
+          <div class="summary"><p>Return a MemoryConversion::Bytes which has this number of terabytes, as measured by storage manufacturers (i.e.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#storage_terabytes-instance-method" class="signature"><strong>#storage_terabytes</strong></a>
+        
+          <div class="summary"><p>Return a MemoryConversion::Bytes which has this number of terabytes, as measured by storage manufacturers (i.e.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#storage_yottabyte-instance-method" class="signature"><strong>#storage_yottabyte</strong></a>
+        
+          <div class="summary"><p>Return a MemoryConversion::Bytes which has this number of yottabytes, as measured by storage manufacturers (i.e.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#storage_yottabytes-instance-method" class="signature"><strong>#storage_yottabytes</strong></a>
+        
+          <div class="summary"><p>Return a MemoryConversion::Bytes which has this number of yottabytes, as measured by storage manufacturers (i.e.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#storage_zettabyte-instance-method" class="signature"><strong>#storage_zettabyte</strong></a>
+        
+          <div class="summary"><p>Return a MemoryConversion::Bytes which has this number of zettabytes, as measured by storage manufacturers (i.e.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#storage_zettabytes-instance-method" class="signature"><strong>#storage_zettabytes</strong></a>
+        
+          <div class="summary"><p>Return a MemoryConversion::Bytes which has this number of zettabytes, as measured by storage manufacturers (i.e.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#terabit-instance-method" class="signature"><strong>#terabit</strong></a>
+        
+          <div class="summary"><p>Return a MemoryConversion::Bits which has this number of terabits.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#terabits-instance-method" class="signature"><strong>#terabits</strong></a>
+        
+          <div class="summary"><p>Return a MemoryConversion::Bits which has this number of terabits.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#terabyte-instance-method" class="signature"><strong>#terabyte</strong></a>
+        
+          <div class="summary"><p>Return a MemoryConversion::Bytes which has this number of terabytes.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#terabytes-instance-method" class="signature"><strong>#terabytes</strong></a>
+        
+          <div class="summary"><p>Return a MemoryConversion::Bytes which has this number of terabytes.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#yottabit-instance-method" class="signature"><strong>#yottabit</strong></a>
+        
+          <div class="summary"><p>Return a MemoryConversion::Bits which has this number of yottabits.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#yottabits-instance-method" class="signature"><strong>#yottabits</strong></a>
+        
+          <div class="summary"><p>Return a MemoryConversion::Bits which has this number of yottabits.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#yottabyte-instance-method" class="signature"><strong>#yottabyte</strong></a>
+        
+          <div class="summary"><p>Return a MemoryConversion::Bytes which has this number of yottabytes.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#yottabytes-instance-method" class="signature"><strong>#yottabytes</strong></a>
+        
+          <div class="summary"><p>Return a MemoryConversion::Bytes which has this number of yottabytes.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#zettabit-instance-method" class="signature"><strong>#zettabit</strong></a>
+        
+          <div class="summary"><p>Return a MemoryConversion::Bits which has this number of zettabits.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#zettabits-instance-method" class="signature"><strong>#zettabits</strong></a>
+        
+          <div class="summary"><p>Return a MemoryConversion::Bits which has this number of zettabits.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#zettabyte-instance-method" class="signature"><strong>#zettabyte</strong></a>
+        
+          <div class="summary"><p>Return a MemoryConversion::Bytes which has this number of zettabytes.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#zettabytes-instance-method" class="signature"><strong>#zettabytes</strong></a>
+        
+          <div class="summary"><p>Return a MemoryConversion::Bytes which has this number of zettabytes.</p></div>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+</div>
+
+
+
+
+
+
+  <h2>Instance Method Detail</h2>
+  
+    <div class="entry-detail" id="bit-instance-method">
+      <div class="signature">
+        
+        def <strong>bit</strong>
+
+        <a class="method-permalink" href="#bit-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Return a MemoryConversion::Bits which has this number of bits.</p>
+
+<pre><code>one_bit <span class="o">=</span> <span class="n">1</span>.bit <span class="c"># =&gt; MemoryConversion::Bits(@value=1)</span>
+one_bit.to_bits <span class="c"># =&gt; 1_f64</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/ext/number.cr#L2" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="bits-instance-method">
+      <div class="signature">
+        
+        def <strong>bits</strong>
+
+        <a class="method-permalink" href="#bits-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Return a MemoryConversion::Bits which has this number of bits.</p>
+
+<pre><code>one_bit <span class="o">=</span> <span class="n">1</span>.bit <span class="c"># =&gt; MemoryConversion::Bits(@value=1)</span>
+one_bit.to_bits <span class="c"># =&gt; 1_f64</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/ext/number.cr#L2" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="byte-instance-method">
+      <div class="signature">
+        
+        def <strong>byte</strong>
+
+        <a class="method-permalink" href="#byte-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Return a MemoryConversion::Bytes which has this number of bytes.</p>
+
+<pre><code>one_byte <span class="o">=</span> <span class="n">1</span>.byte <span class="c"># =&gt; MemoryConversion::Bytes(@value=1)</span>
+one_byte.to_bytes <span class="c"># =&gt; 1_f64</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/ext/number.cr#L2" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="bytes-instance-method">
+      <div class="signature">
+        
+        def <strong>bytes</strong>
+
+        <a class="method-permalink" href="#bytes-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Return a MemoryConversion::Bytes which has this number of bytes.</p>
+
+<pre><code>one_byte <span class="o">=</span> <span class="n">1</span>.byte <span class="c"># =&gt; MemoryConversion::Bytes(@value=1)</span>
+one_byte.to_bytes <span class="c"># =&gt; 1_f64</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/ext/number.cr#L2" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="exabit-instance-method">
+      <div class="signature">
+        
+        def <strong>exabit</strong>
+
+        <a class="method-permalink" href="#exabit-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Return a MemoryConversion::Bits which has this number of exabits.</p>
+
+<pre><code>one_exabit <span class="o">=</span> <span class="n">1</span>.exabit <span class="c"># =&gt; MemoryConversion::Bits(@value=0)</span>
+one_exabit.to_bits <span class="c"># =&gt; 0_f64</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/ext/number.cr#L2" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="exabits-instance-method">
+      <div class="signature">
+        
+        def <strong>exabits</strong>
+
+        <a class="method-permalink" href="#exabits-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Return a MemoryConversion::Bits which has this number of exabits.</p>
+
+<pre><code>one_exabit <span class="o">=</span> <span class="n">1</span>.exabit <span class="c"># =&gt; MemoryConversion::Bits(@value=0)</span>
+one_exabit.to_bits <span class="c"># =&gt; 0_f64</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/ext/number.cr#L2" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="exabyte-instance-method">
+      <div class="signature">
+        
+        def <strong>exabyte</strong>
+
+        <a class="method-permalink" href="#exabyte-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Return a MemoryConversion::Bytes which has this number of exabytes.</p>
+
+<pre><code>one_exabyte <span class="o">=</span> <span class="n">1</span>.exabyte <span class="c"># =&gt; MemoryConversion::Bytes(@value=0)</span>
+one_exabyte.to_bytes <span class="c"># =&gt; 0_f64</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/ext/number.cr#L2" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="exabytes-instance-method">
+      <div class="signature">
+        
+        def <strong>exabytes</strong>
+
+        <a class="method-permalink" href="#exabytes-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Return a MemoryConversion::Bytes which has this number of exabytes.</p>
+
+<pre><code>one_exabyte <span class="o">=</span> <span class="n">1</span>.exabyte <span class="c"># =&gt; MemoryConversion::Bytes(@value=0)</span>
+one_exabyte.to_bytes <span class="c"># =&gt; 0_f64</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/ext/number.cr#L2" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="gigabit-instance-method">
+      <div class="signature">
+        
+        def <strong>gigabit</strong>
+
+        <a class="method-permalink" href="#gigabit-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Return a MemoryConversion::Bits which has this number of gigabits.</p>
+
+<pre><code>one_gigabit <span class="o">=</span> <span class="n">1</span>.gigabit <span class="c"># =&gt; MemoryConversion::Bits(@value=1073741824)</span>
+one_gigabit.to_bits <span class="c"># =&gt; 1073741824_f64</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/ext/number.cr#L2" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="gigabits-instance-method">
+      <div class="signature">
+        
+        def <strong>gigabits</strong>
+
+        <a class="method-permalink" href="#gigabits-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Return a MemoryConversion::Bits which has this number of gigabits.</p>
+
+<pre><code>one_gigabit <span class="o">=</span> <span class="n">1</span>.gigabit <span class="c"># =&gt; MemoryConversion::Bits(@value=1073741824)</span>
+one_gigabit.to_bits <span class="c"># =&gt; 1073741824_f64</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/ext/number.cr#L2" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="gigabyte-instance-method">
+      <div class="signature">
+        
+        def <strong>gigabyte</strong>
+
+        <a class="method-permalink" href="#gigabyte-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Return a MemoryConversion::Bytes which has this number of gigabytes.</p>
+
+<pre><code>one_gigabyte <span class="o">=</span> <span class="n">1</span>.gigabyte <span class="c"># =&gt; MemoryConversion::Bytes(@value=1073741824)</span>
+one_gigabyte.to_bytes <span class="c"># =&gt; 1073741824_f64</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/ext/number.cr#L2" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="gigabytes-instance-method">
+      <div class="signature">
+        
+        def <strong>gigabytes</strong>
+
+        <a class="method-permalink" href="#gigabytes-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Return a MemoryConversion::Bytes which has this number of gigabytes.</p>
+
+<pre><code>one_gigabyte <span class="o">=</span> <span class="n">1</span>.gigabyte <span class="c"># =&gt; MemoryConversion::Bytes(@value=1073741824)</span>
+one_gigabyte.to_bytes <span class="c"># =&gt; 1073741824_f64</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/ext/number.cr#L2" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="kilobit-instance-method">
+      <div class="signature">
+        
+        def <strong>kilobit</strong>
+
+        <a class="method-permalink" href="#kilobit-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Return a MemoryConversion::Bits which has this number of kilobits.</p>
+
+<pre><code>one_kilobit <span class="o">=</span> <span class="n">1</span>.kilobit <span class="c"># =&gt; MemoryConversion::Bits(@value=1024)</span>
+one_kilobit.to_bits <span class="c"># =&gt; 1024_f64</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/ext/number.cr#L2" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="kilobits-instance-method">
+      <div class="signature">
+        
+        def <strong>kilobits</strong>
+
+        <a class="method-permalink" href="#kilobits-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Return a MemoryConversion::Bits which has this number of kilobits.</p>
+
+<pre><code>one_kilobit <span class="o">=</span> <span class="n">1</span>.kilobit <span class="c"># =&gt; MemoryConversion::Bits(@value=1024)</span>
+one_kilobit.to_bits <span class="c"># =&gt; 1024_f64</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/ext/number.cr#L2" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="kilobyte-instance-method">
+      <div class="signature">
+        
+        def <strong>kilobyte</strong>
+
+        <a class="method-permalink" href="#kilobyte-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Return a MemoryConversion::Bytes which has this number of kilobytes.</p>
+
+<pre><code>one_kilobyte <span class="o">=</span> <span class="n">1</span>.kilobyte <span class="c"># =&gt; MemoryConversion::Bytes(@value=1024)</span>
+one_kilobyte.to_bytes <span class="c"># =&gt; 1024_f64</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/ext/number.cr#L2" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="kilobytes-instance-method">
+      <div class="signature">
+        
+        def <strong>kilobytes</strong>
+
+        <a class="method-permalink" href="#kilobytes-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Return a MemoryConversion::Bytes which has this number of kilobytes.</p>
+
+<pre><code>one_kilobyte <span class="o">=</span> <span class="n">1</span>.kilobyte <span class="c"># =&gt; MemoryConversion::Bytes(@value=1024)</span>
+one_kilobyte.to_bytes <span class="c"># =&gt; 1024_f64</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/ext/number.cr#L2" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="megabit-instance-method">
+      <div class="signature">
+        
+        def <strong>megabit</strong>
+
+        <a class="method-permalink" href="#megabit-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Return a MemoryConversion::Bits which has this number of megabits.</p>
+
+<pre><code>one_megabit <span class="o">=</span> <span class="n">1</span>.megabit <span class="c"># =&gt; MemoryConversion::Bits(@value=1048576)</span>
+one_megabit.to_bits <span class="c"># =&gt; 1048576_f64</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/ext/number.cr#L2" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="megabits-instance-method">
+      <div class="signature">
+        
+        def <strong>megabits</strong>
+
+        <a class="method-permalink" href="#megabits-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Return a MemoryConversion::Bits which has this number of megabits.</p>
+
+<pre><code>one_megabit <span class="o">=</span> <span class="n">1</span>.megabit <span class="c"># =&gt; MemoryConversion::Bits(@value=1048576)</span>
+one_megabit.to_bits <span class="c"># =&gt; 1048576_f64</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/ext/number.cr#L2" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="megabyte-instance-method">
+      <div class="signature">
+        
+        def <strong>megabyte</strong>
+
+        <a class="method-permalink" href="#megabyte-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Return a MemoryConversion::Bytes which has this number of megabytes.</p>
+
+<pre><code>one_megabyte <span class="o">=</span> <span class="n">1</span>.megabyte <span class="c"># =&gt; MemoryConversion::Bytes(@value=1048576)</span>
+one_megabyte.to_bytes <span class="c"># =&gt; 1048576_f64</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/ext/number.cr#L2" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="megabytes-instance-method">
+      <div class="signature">
+        
+        def <strong>megabytes</strong>
+
+        <a class="method-permalink" href="#megabytes-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Return a MemoryConversion::Bytes which has this number of megabytes.</p>
+
+<pre><code>one_megabyte <span class="o">=</span> <span class="n">1</span>.megabyte <span class="c"># =&gt; MemoryConversion::Bytes(@value=1048576)</span>
+one_megabyte.to_bytes <span class="c"># =&gt; 1048576_f64</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/ext/number.cr#L2" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="petabit-instance-method">
+      <div class="signature">
+        
+        def <strong>petabit</strong>
+
+        <a class="method-permalink" href="#petabit-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Return a MemoryConversion::Bits which has this number of petabits.</p>
+
+<pre><code>one_petabit <span class="o">=</span> <span class="n">1</span>.petabit <span class="c"># =&gt; MemoryConversion::Bits(@value=0)</span>
+one_petabit.to_bits <span class="c"># =&gt; 0_f64</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/ext/number.cr#L2" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="petabits-instance-method">
+      <div class="signature">
+        
+        def <strong>petabits</strong>
+
+        <a class="method-permalink" href="#petabits-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Return a MemoryConversion::Bits which has this number of petabits.</p>
+
+<pre><code>one_petabit <span class="o">=</span> <span class="n">1</span>.petabit <span class="c"># =&gt; MemoryConversion::Bits(@value=0)</span>
+one_petabit.to_bits <span class="c"># =&gt; 0_f64</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/ext/number.cr#L2" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="petabyte-instance-method">
+      <div class="signature">
+        
+        def <strong>petabyte</strong>
+
+        <a class="method-permalink" href="#petabyte-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Return a MemoryConversion::Bytes which has this number of petabytes.</p>
+
+<pre><code>one_petabyte <span class="o">=</span> <span class="n">1</span>.petabyte <span class="c"># =&gt; MemoryConversion::Bytes(@value=0)</span>
+one_petabyte.to_bytes <span class="c"># =&gt; 0_f64</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/ext/number.cr#L2" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="petabytes-instance-method">
+      <div class="signature">
+        
+        def <strong>petabytes</strong>
+
+        <a class="method-permalink" href="#petabytes-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Return a MemoryConversion::Bytes which has this number of petabytes.</p>
+
+<pre><code>one_petabyte <span class="o">=</span> <span class="n">1</span>.petabyte <span class="c"># =&gt; MemoryConversion::Bytes(@value=0)</span>
+one_petabyte.to_bytes <span class="c"># =&gt; 0_f64</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/ext/number.cr#L2" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="storage_byte-instance-method">
+      <div class="signature">
+        
+        def <strong>storage_byte</strong>
+
+        <a class="method-permalink" href="#storage_byte-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Return a MemoryConversion::Bytes which has this number of bytes,
+as measured by storage manufacturers (i.e. powers of 10).</p>
+
+<pre><code>one_byte <span class="o">=</span> <span class="n">1</span>.byte <span class="c"># =&gt; MemoryConversion::Bytes(@value=1)</span>
+one_byte.to_bytes <span class="c"># =&gt; 1_f64</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/ext/number.cr#L2" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="storage_bytes-instance-method">
+      <div class="signature">
+        
+        def <strong>storage_bytes</strong>
+
+        <a class="method-permalink" href="#storage_bytes-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Return a MemoryConversion::Bytes which has this number of bytes,
+as measured by storage manufacturers (i.e. powers of 10).</p>
+
+<pre><code>one_byte <span class="o">=</span> <span class="n">1</span>.byte <span class="c"># =&gt; MemoryConversion::Bytes(@value=1)</span>
+one_byte.to_bytes <span class="c"># =&gt; 1_f64</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/ext/number.cr#L2" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="storage_exabyte-instance-method">
+      <div class="signature">
+        
+        def <strong>storage_exabyte</strong>
+
+        <a class="method-permalink" href="#storage_exabyte-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Return a MemoryConversion::Bytes which has this number of exabytes,
+as measured by storage manufacturers (i.e. powers of 10).</p>
+
+<pre><code>one_exabyte <span class="o">=</span> <span class="n">1</span>.exabyte <span class="c"># =&gt; MemoryConversion::Bytes(@value=1000000)</span>
+one_exabyte.to_bytes <span class="c"># =&gt; 1000000_f64</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/ext/number.cr#L2" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="storage_exabytes-instance-method">
+      <div class="signature">
+        
+        def <strong>storage_exabytes</strong>
+
+        <a class="method-permalink" href="#storage_exabytes-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Return a MemoryConversion::Bytes which has this number of exabytes,
+as measured by storage manufacturers (i.e. powers of 10).</p>
+
+<pre><code>one_exabyte <span class="o">=</span> <span class="n">1</span>.exabyte <span class="c"># =&gt; MemoryConversion::Bytes(@value=1000000)</span>
+one_exabyte.to_bytes <span class="c"># =&gt; 1000000_f64</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/ext/number.cr#L2" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="storage_gigabyte-instance-method">
+      <div class="signature">
+        
+        def <strong>storage_gigabyte</strong>
+
+        <a class="method-permalink" href="#storage_gigabyte-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Return a MemoryConversion::Bytes which has this number of gigabytes,
+as measured by storage manufacturers (i.e. powers of 10).</p>
+
+<pre><code>one_gigabyte <span class="o">=</span> <span class="n">1</span>.gigabyte <span class="c"># =&gt; MemoryConversion::Bytes(@value=1000)</span>
+one_gigabyte.to_bytes <span class="c"># =&gt; 1000_f64</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/ext/number.cr#L2" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="storage_gigabytes-instance-method">
+      <div class="signature">
+        
+        def <strong>storage_gigabytes</strong>
+
+        <a class="method-permalink" href="#storage_gigabytes-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Return a MemoryConversion::Bytes which has this number of gigabytes,
+as measured by storage manufacturers (i.e. powers of 10).</p>
+
+<pre><code>one_gigabyte <span class="o">=</span> <span class="n">1</span>.gigabyte <span class="c"># =&gt; MemoryConversion::Bytes(@value=1000)</span>
+one_gigabyte.to_bytes <span class="c"># =&gt; 1000_f64</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/ext/number.cr#L2" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="storage_kilobyte-instance-method">
+      <div class="signature">
+        
+        def <strong>storage_kilobyte</strong>
+
+        <a class="method-permalink" href="#storage_kilobyte-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Return a MemoryConversion::Bytes which has this number of kilobytes,
+as measured by storage manufacturers (i.e. powers of 10).</p>
+
+<pre><code>one_kilobyte <span class="o">=</span> <span class="n">1</span>.kilobyte <span class="c"># =&gt; MemoryConversion::Bytes(@value=10)</span>
+one_kilobyte.to_bytes <span class="c"># =&gt; 10_f64</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/ext/number.cr#L2" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="storage_kilobytes-instance-method">
+      <div class="signature">
+        
+        def <strong>storage_kilobytes</strong>
+
+        <a class="method-permalink" href="#storage_kilobytes-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Return a MemoryConversion::Bytes which has this number of kilobytes,
+as measured by storage manufacturers (i.e. powers of 10).</p>
+
+<pre><code>one_kilobyte <span class="o">=</span> <span class="n">1</span>.kilobyte <span class="c"># =&gt; MemoryConversion::Bytes(@value=10)</span>
+one_kilobyte.to_bytes <span class="c"># =&gt; 10_f64</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/ext/number.cr#L2" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="storage_megabyte-instance-method">
+      <div class="signature">
+        
+        def <strong>storage_megabyte</strong>
+
+        <a class="method-permalink" href="#storage_megabyte-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Return a MemoryConversion::Bytes which has this number of megabytes,
+as measured by storage manufacturers (i.e. powers of 10).</p>
+
+<pre><code>one_megabyte <span class="o">=</span> <span class="n">1</span>.megabyte <span class="c"># =&gt; MemoryConversion::Bytes(@value=100)</span>
+one_megabyte.to_bytes <span class="c"># =&gt; 100_f64</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/ext/number.cr#L2" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="storage_megabytes-instance-method">
+      <div class="signature">
+        
+        def <strong>storage_megabytes</strong>
+
+        <a class="method-permalink" href="#storage_megabytes-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Return a MemoryConversion::Bytes which has this number of megabytes,
+as measured by storage manufacturers (i.e. powers of 10).</p>
+
+<pre><code>one_megabyte <span class="o">=</span> <span class="n">1</span>.megabyte <span class="c"># =&gt; MemoryConversion::Bytes(@value=100)</span>
+one_megabyte.to_bytes <span class="c"># =&gt; 100_f64</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/ext/number.cr#L2" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="storage_petabyte-instance-method">
+      <div class="signature">
+        
+        def <strong>storage_petabyte</strong>
+
+        <a class="method-permalink" href="#storage_petabyte-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Return a MemoryConversion::Bytes which has this number of petabytes,
+as measured by storage manufacturers (i.e. powers of 10).</p>
+
+<pre><code>one_petabyte <span class="o">=</span> <span class="n">1</span>.petabyte <span class="c"># =&gt; MemoryConversion::Bytes(@value=100000)</span>
+one_petabyte.to_bytes <span class="c"># =&gt; 100000_f64</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/ext/number.cr#L2" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="storage_petabytes-instance-method">
+      <div class="signature">
+        
+        def <strong>storage_petabytes</strong>
+
+        <a class="method-permalink" href="#storage_petabytes-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Return a MemoryConversion::Bytes which has this number of petabytes,
+as measured by storage manufacturers (i.e. powers of 10).</p>
+
+<pre><code>one_petabyte <span class="o">=</span> <span class="n">1</span>.petabyte <span class="c"># =&gt; MemoryConversion::Bytes(@value=100000)</span>
+one_petabyte.to_bytes <span class="c"># =&gt; 100000_f64</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/ext/number.cr#L2" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="storage_terabyte-instance-method">
+      <div class="signature">
+        
+        def <strong>storage_terabyte</strong>
+
+        <a class="method-permalink" href="#storage_terabyte-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Return a MemoryConversion::Bytes which has this number of terabytes,
+as measured by storage manufacturers (i.e. powers of 10).</p>
+
+<pre><code>one_terabyte <span class="o">=</span> <span class="n">1</span>.terabyte <span class="c"># =&gt; MemoryConversion::Bytes(@value=10000)</span>
+one_terabyte.to_bytes <span class="c"># =&gt; 10000_f64</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/ext/number.cr#L2" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="storage_terabytes-instance-method">
+      <div class="signature">
+        
+        def <strong>storage_terabytes</strong>
+
+        <a class="method-permalink" href="#storage_terabytes-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Return a MemoryConversion::Bytes which has this number of terabytes,
+as measured by storage manufacturers (i.e. powers of 10).</p>
+
+<pre><code>one_terabyte <span class="o">=</span> <span class="n">1</span>.terabyte <span class="c"># =&gt; MemoryConversion::Bytes(@value=10000)</span>
+one_terabyte.to_bytes <span class="c"># =&gt; 10000_f64</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/ext/number.cr#L2" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="storage_yottabyte-instance-method">
+      <div class="signature">
+        
+        def <strong>storage_yottabyte</strong>
+
+        <a class="method-permalink" href="#storage_yottabyte-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Return a MemoryConversion::Bytes which has this number of yottabytes,
+as measured by storage manufacturers (i.e. powers of 10).</p>
+
+<pre><code>one_yottabyte <span class="o">=</span> <span class="n">1</span>.yottabyte <span class="c"># =&gt; MemoryConversion::Bytes(@value=100000000)</span>
+one_yottabyte.to_bytes <span class="c"># =&gt; 100000000_f64</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/ext/number.cr#L2" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="storage_yottabytes-instance-method">
+      <div class="signature">
+        
+        def <strong>storage_yottabytes</strong>
+
+        <a class="method-permalink" href="#storage_yottabytes-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Return a MemoryConversion::Bytes which has this number of yottabytes,
+as measured by storage manufacturers (i.e. powers of 10).</p>
+
+<pre><code>one_yottabyte <span class="o">=</span> <span class="n">1</span>.yottabyte <span class="c"># =&gt; MemoryConversion::Bytes(@value=100000000)</span>
+one_yottabyte.to_bytes <span class="c"># =&gt; 100000000_f64</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/ext/number.cr#L2" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="storage_zettabyte-instance-method">
+      <div class="signature">
+        
+        def <strong>storage_zettabyte</strong>
+
+        <a class="method-permalink" href="#storage_zettabyte-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Return a MemoryConversion::Bytes which has this number of zettabytes,
+as measured by storage manufacturers (i.e. powers of 10).</p>
+
+<pre><code>one_zettabyte <span class="o">=</span> <span class="n">1</span>.zettabyte <span class="c"># =&gt; MemoryConversion::Bytes(@value=10000000)</span>
+one_zettabyte.to_bytes <span class="c"># =&gt; 10000000_f64</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/ext/number.cr#L2" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="storage_zettabytes-instance-method">
+      <div class="signature">
+        
+        def <strong>storage_zettabytes</strong>
+
+        <a class="method-permalink" href="#storage_zettabytes-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Return a MemoryConversion::Bytes which has this number of zettabytes,
+as measured by storage manufacturers (i.e. powers of 10).</p>
+
+<pre><code>one_zettabyte <span class="o">=</span> <span class="n">1</span>.zettabyte <span class="c"># =&gt; MemoryConversion::Bytes(@value=10000000)</span>
+one_zettabyte.to_bytes <span class="c"># =&gt; 10000000_f64</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/ext/number.cr#L2" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="terabit-instance-method">
+      <div class="signature">
+        
+        def <strong>terabit</strong>
+
+        <a class="method-permalink" href="#terabit-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Return a MemoryConversion::Bits which has this number of terabits.</p>
+
+<pre><code>one_terabit <span class="o">=</span> <span class="n">1</span>.terabit <span class="c"># =&gt; MemoryConversion::Bits(@value=0)</span>
+one_terabit.to_bits <span class="c"># =&gt; 0_f64</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/ext/number.cr#L2" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="terabits-instance-method">
+      <div class="signature">
+        
+        def <strong>terabits</strong>
+
+        <a class="method-permalink" href="#terabits-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Return a MemoryConversion::Bits which has this number of terabits.</p>
+
+<pre><code>one_terabit <span class="o">=</span> <span class="n">1</span>.terabit <span class="c"># =&gt; MemoryConversion::Bits(@value=0)</span>
+one_terabit.to_bits <span class="c"># =&gt; 0_f64</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/ext/number.cr#L2" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="terabyte-instance-method">
+      <div class="signature">
+        
+        def <strong>terabyte</strong>
+
+        <a class="method-permalink" href="#terabyte-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Return a MemoryConversion::Bytes which has this number of terabytes.</p>
+
+<pre><code>one_terabyte <span class="o">=</span> <span class="n">1</span>.terabyte <span class="c"># =&gt; MemoryConversion::Bytes(@value=0)</span>
+one_terabyte.to_bytes <span class="c"># =&gt; 0_f64</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/ext/number.cr#L2" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="terabytes-instance-method">
+      <div class="signature">
+        
+        def <strong>terabytes</strong>
+
+        <a class="method-permalink" href="#terabytes-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Return a MemoryConversion::Bytes which has this number of terabytes.</p>
+
+<pre><code>one_terabyte <span class="o">=</span> <span class="n">1</span>.terabyte <span class="c"># =&gt; MemoryConversion::Bytes(@value=0)</span>
+one_terabyte.to_bytes <span class="c"># =&gt; 0_f64</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/ext/number.cr#L2" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="yottabit-instance-method">
+      <div class="signature">
+        
+        def <strong>yottabit</strong>
+
+        <a class="method-permalink" href="#yottabit-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Return a MemoryConversion::Bits which has this number of yottabits.</p>
+
+<pre><code>one_yottabit <span class="o">=</span> <span class="n">1</span>.yottabit <span class="c"># =&gt; MemoryConversion::Bits(@value=0)</span>
+one_yottabit.to_bits <span class="c"># =&gt; 0_f64</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/ext/number.cr#L2" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="yottabits-instance-method">
+      <div class="signature">
+        
+        def <strong>yottabits</strong>
+
+        <a class="method-permalink" href="#yottabits-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Return a MemoryConversion::Bits which has this number of yottabits.</p>
+
+<pre><code>one_yottabit <span class="o">=</span> <span class="n">1</span>.yottabit <span class="c"># =&gt; MemoryConversion::Bits(@value=0)</span>
+one_yottabit.to_bits <span class="c"># =&gt; 0_f64</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/ext/number.cr#L2" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="yottabyte-instance-method">
+      <div class="signature">
+        
+        def <strong>yottabyte</strong>
+
+        <a class="method-permalink" href="#yottabyte-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Return a MemoryConversion::Bytes which has this number of yottabytes.</p>
+
+<pre><code>one_yottabyte <span class="o">=</span> <span class="n">1</span>.yottabyte <span class="c"># =&gt; MemoryConversion::Bytes(@value=0)</span>
+one_yottabyte.to_bytes <span class="c"># =&gt; 0_f64</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/ext/number.cr#L2" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="yottabytes-instance-method">
+      <div class="signature">
+        
+        def <strong>yottabytes</strong>
+
+        <a class="method-permalink" href="#yottabytes-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Return a MemoryConversion::Bytes which has this number of yottabytes.</p>
+
+<pre><code>one_yottabyte <span class="o">=</span> <span class="n">1</span>.yottabyte <span class="c"># =&gt; MemoryConversion::Bytes(@value=0)</span>
+one_yottabyte.to_bytes <span class="c"># =&gt; 0_f64</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/ext/number.cr#L2" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="zettabit-instance-method">
+      <div class="signature">
+        
+        def <strong>zettabit</strong>
+
+        <a class="method-permalink" href="#zettabit-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Return a MemoryConversion::Bits which has this number of zettabits.</p>
+
+<pre><code>one_zettabit <span class="o">=</span> <span class="n">1</span>.zettabit <span class="c"># =&gt; MemoryConversion::Bits(@value=0)</span>
+one_zettabit.to_bits <span class="c"># =&gt; 0_f64</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/ext/number.cr#L2" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="zettabits-instance-method">
+      <div class="signature">
+        
+        def <strong>zettabits</strong>
+
+        <a class="method-permalink" href="#zettabits-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Return a MemoryConversion::Bits which has this number of zettabits.</p>
+
+<pre><code>one_zettabit <span class="o">=</span> <span class="n">1</span>.zettabit <span class="c"># =&gt; MemoryConversion::Bits(@value=0)</span>
+one_zettabit.to_bits <span class="c"># =&gt; 0_f64</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/ext/number.cr#L2" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="zettabyte-instance-method">
+      <div class="signature">
+        
+        def <strong>zettabyte</strong>
+
+        <a class="method-permalink" href="#zettabyte-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Return a MemoryConversion::Bytes which has this number of zettabytes.</p>
+
+<pre><code>one_zettabyte <span class="o">=</span> <span class="n">1</span>.zettabyte <span class="c"># =&gt; MemoryConversion::Bytes(@value=0)</span>
+one_zettabyte.to_bytes <span class="c"># =&gt; 0_f64</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/ext/number.cr#L2" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="zettabytes-instance-method">
+      <div class="signature">
+        
+        def <strong>zettabytes</strong>
+
+        <a class="method-permalink" href="#zettabytes-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Return a MemoryConversion::Bytes which has this number of zettabytes.</p>
+
+<pre><code>one_zettabyte <span class="o">=</span> <span class="n">1</span>.zettabyte <span class="c"># =&gt; MemoryConversion::Bytes(@value=0)</span>
+one_zettabyte.to_bytes <span class="c"># =&gt; 0_f64</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dscottboggs/memory_conversion/blob/5c883e9a47bf584c700349e06f32fb1214d7c976/src/ext/number.cr#L2" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>
