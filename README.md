@@ -22,6 +22,8 @@ require "memory_conversion"
 1.terabyte.to_kilobits
 ```
 
+**Please see the [documentation](https://dscottboggs.github.io/memory_conversion/Number.html)**, and the [spec file](https://github.com/dscottboggs/memory_conversion/blob/master/spec/memory_conversion_spec.cr) for a few examples.
+
 ## Contributing
 
 1. Fork it (<https://github.com/dscottboggs/memory_conversion/fork>)

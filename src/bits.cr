@@ -35,11 +35,11 @@ struct MemoryConversion::Bits
     def to_storage_{{prefix.downcase.id}}bytes : BigFloat
       to_storage_{{prefix.downcase.id}}bits / 8
     end
-    # Produce a string representing this bit value as {{prefix.id}}bits.
+    # Produce a string representing this bit value like `"## {{prefix.id}}bits"`.
     def to_{{prefix.downcase.id}}bit_s
-      "#{to_{{prefix.downcase.id}}bits}{{prefix.capitalize.id}}bits"
+      "#{to_{{prefix.downcase.id}}bits} {{prefix.capitalize.id}}bits"
     end
-    # Produce a string representing this bit value as {{prefix[0..0].id}}b.
+    # Produce a string representing this bit value like `"##{{prefix[0..0].id}}b"`.
     def to_{{prefix[0..0].downcase.id}}b_s
       "#{to_{{prefix.downcase.id}}bits}{{prefix[0..0].id}}b"
     end

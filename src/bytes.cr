@@ -34,11 +34,11 @@ struct MemoryConversion::Bytes
     def to_storage_{{prefix.downcase.id}}bits : BigFloat
       to_storage_{{prefix.downcase.id}}bytes * 8
     end
-    # Produce a string representing this byte value as {{prefix.id}}bytes.
+    # Produce a string representing this byte value like `"## {{prefix.id}}bytes"`.
     def to_{{prefix.downcase.id}}byte_s
       "#{to_{{prefix.downcase.id}}bytes} {{prefix.id}}bytes"
     end
-    # Produce a string representing this byte value as {{prefix[0..0].id}}B.
+    # Produce a string representing this byte value like `"##{{prefix[0..0].id}}B"`.
     def to_{{prefix[0..0].downcase.id}}b_s
       "#{to_{{prefix.downcase.id}}bytes}{{prefix[0..0].id}}B"
     end
