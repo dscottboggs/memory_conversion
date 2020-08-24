@@ -1,5 +1,7 @@
 # Memory Conversion
 
+[![Build Status](https://cloud.drone.io/api/badges/dscottboggs/memory_conversion/status.svg)](https://cloud.drone.io/dscottboggs/memory_conversion)
+
 Quick and easy conversion between memory values.
 
 ## Installation
@@ -19,7 +21,7 @@ Quick and easy conversion between memory values.
 ```crystal
 require "memory_conversion"
 
-1.terabyte.to_kilobits
+1.terabyte.to_kilobits # => 8589934592.0
 ```
 
 **Please see the [documentation](https://dscottboggs.github.io/memory_conversion/Number.html)**, and the [spec file](https://github.com/dscottboggs/memory_conversion/blob/master/spec/memory_conversion_spec.cr) for a few examples.
